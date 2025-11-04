@@ -3784,3 +3784,47 @@ select:focus {
     Element Page Css      
 =============================================
 ***/
+
+/* ==========================
+   Logo Image Replacement
+   Replaces icon/text logo with a real image across the site
+   ========================== */
+.main-logo-box a,
+.sticky-header .logo a {
+    background-image: url(../images/resources/logo.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    display: inline-block;
+}
+
+.main-logo-box a {
+    width: 260px;
+    height: 110px;
+    background-size: 100% auto;
+}
+
+.sticky-header .logo a {
+    width: 220px;
+    height: 80px;
+    background-size: 100% auto;
+}
+
+.main-logo-box a .logo-icon,
+.main-logo-box a .logo-text,
+.sticky-header .logo a .logo-icon,
+.sticky-header .logo a .logo-text {
+    display: none !important;
+}
+
+.mobile-menu .nav-logo { display: block !important; }
+.mobile-menu .nav-logo a {
+    background-image: url(../images/resources/logo.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100% auto;
+    display: inline-block;
+    width: 260px;
+    height: 70px;
+}
+.mobile-menu .nav-logo a img { display: none; }
