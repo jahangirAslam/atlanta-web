@@ -954,8 +954,60 @@
 
     <script src="assets/js/jquery-1color-switcher.min.js"></script>
 
+    <script src="assets/data/recent-posts.js"></script>
     <!-- thm custom script -->
     <script src="assets/js/custom.js"></script>
+
+    <script>
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? null : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        function renderRecentPost() {
+            var defaultContentHtml = document.getElementById('post-content') ? document.getElementById('post-content').innerHTML : '';
+            if (window.RECENT_POSTS && window.RECENT_POSTS['eco-friendly-lilburn'] && !window.RECENT_POSTS['eco-friendly-lilburn'].contentHtml) {
+                window.RECENT_POSTS['eco-friendly-lilburn'].contentHtml = defaultContentHtml;
+            }
+
+            var slug = getUrlParameter('post') || 'eco-friendly-lilburn';
+            var posts = window.RECENT_POSTS || {};
+            var post = posts[slug] || posts['eco-friendly-lilburn'];
+            if (!post) return;
+
+            // Update head title and breadcrumb
+            var pageTitle = document.getElementById('page-title');
+            if (pageTitle) pageTitle.textContent = post.title + ' - EZ Atlanta Junk Removal';
+            var bcPost = document.getElementById('breadcrumb-post');
+            if (bcPost) bcPost.textContent = post.title;
+            var bcTitle = document.getElementById('breadcrumb-title');
+            if (bcTitle) bcTitle.textContent = post.title;
+
+            // Image and date
+            var img = document.getElementById('post-image');
+            if (img) img.src = post.hero;
+            var dayEl = document.getElementById('post-day');
+            var monEl = document.getElementById('post-month');
+            if (dayEl) dayEl.firstChild && (dayEl.firstChild.nodeValue = post.date.day);
+            if (monEl) monEl.textContent = post.date.mon;
+
+            // Author
+            var authorEl = document.getElementById('post-author');
+            if (authorEl) authorEl.textContent = 'by ' + (post.author || 'Admin');
+
+            // Title
+            var titleMain = document.getElementById('post-title-main');
+            if (titleMain) titleMain.textContent = post.title;
+
+            // Content
+            var content = document.getElementById('post-content');
+            if (content) content.innerHTML = post.contentHtml + '<p style="font-weight: bold; color: #1a9f5a; font-size: 18px;">Call Us Now (678) 841-8655</p>';
+        }
+
+        document.addEventListener('DOMContentLoaded', renderRecentPost);
+    </script>
 
 
 

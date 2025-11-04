@@ -1243,7 +1243,7 @@
 
             // Update page title
             document.getElementById('page-title').textContent = service.title + ' - EZ Atlanta Junk Removal';
-
+            
             // Update breadcrumb
             document.getElementById('breadcrumb-service').textContent = serviceName;
             document.getElementById('breadcrumb-title').textContent = service.title;
@@ -1273,7 +1273,7 @@
             // Update service content
             document.getElementById('service-content').innerHTML = buildServiceHtml(service);
             updateToc(service);
-
+            
             // Re-attach FAQ click handlers after content is loaded
             setTimeout(attachFaqHandlers, 100);
 
