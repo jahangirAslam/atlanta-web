@@ -971,8 +971,48 @@
 
     <script src="assets/js/jquery-1color-switcher.min.js"></script>
 
+    <script src="assets/data/blogs.js"></script>
     <!-- thm custom script -->
     <script src="assets/js/custom.js"></script>
+
+    <script>
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? null : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        function renderBlog() {
+            var slug = getUrlParameter('post') || 'garage-cleanouts-atlanta';
+            var posts = window.BLOG_POSTS || {};
+            var post = posts[slug] || posts['garage-cleanouts-atlanta'];
+            if (!post) return;
+
+            // Hero image
+            var heroImg = document.querySelector('.single-blog-style1__inner .img-holder .inner img');
+            if (heroImg) heroImg.src = post.hero;
+
+            // Date box
+            var dateBox = document.querySelector('.single-blog-style1__inner .date-box h6');
+            if (dateBox) dateBox.innerHTML = (post.date.day || '') + '<br> <span>' + (post.date.mon || '') + '</span>';
+
+            // Author
+            var authorEl = document.querySelector('.single-blog-style1__inner .meta-info li a');
+            if (authorEl) authorEl.textContent = 'by ' + (post.author || 'Admin');
+
+            // Title
+            var titleEl = document.querySelector('.single-blog-style1__inner .text-inner .blog-title');
+            if (titleEl) titleEl.textContent = post.title;
+            document.title = post.title + ' - EZ Atlanta Junk Removal';
+
+            // Content
+            var textEl = document.querySelector('.single-blog-style1__inner .text');
+            if (textEl) textEl.innerHTML = post.contentHtml + '<p style="font-weight: bold; color: #1a9f5a; font-size: 18px;">Call Us Now (678) 841-8655</p>';
+        }
+
+        document.addEventListener('DOMContentLoaded', renderBlog);
+    </script>
 
 
 

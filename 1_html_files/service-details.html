@@ -656,7 +656,7 @@
                     <div class="col-xl-5 col-lg-6">
                         <!-- Service Image -->
                         <div class="service-image-container">
-                            <img src="assets/images/about/about-style3-img.jpg" alt="Hoarding Clean Outs Service" id="service-image">
+                            <img src="assets/images/about/about-style3-img.jpg" alt="Loading service image" id="service-image">
                         </div>
 
                         <!-- Contact Form -->
@@ -1252,9 +1252,22 @@
             document.getElementById('form-title').innerHTML = 'Need <span style="color: #fff;">' + serviceName + '</span> Service?';
             document.getElementById('service-name-form').textContent = serviceName;
 
-            // Update service image
+            // Update service image with fallback
             var imgEl = document.getElementById('service-image');
-            imgEl.src = service.image || 'assets/images/about/about-style3-img.jpg';
+            var fallbackImg = 'assets/images/about/about-style3-img.jpg';
+            var serviceImg = (service.image && String(service.image).trim()) ? service.image : fallbackImg;
+            // light cache-buster to avoid CDN serving same featured image for all
+            var buster = (service.key || serviceParam || 'svc');
+            if (serviceImg.indexOf('source.unsplash.com') !== -1) {
+                serviceImg += (serviceImg.indexOf('?') > -1 ? '&' : '?') + 'sig=' + encodeURIComponent(buster);
+            }
+            imgEl.onerror = function () {
+                if (this.src !== fallbackImg) {
+                    this.onerror = null;
+                    this.src = fallbackImg;
+                }
+            };
+            imgEl.src = serviceImg;
             imgEl.alt = serviceName;
 
             // Update service content
@@ -1263,6 +1276,38 @@
 
             // Re-attach FAQ click handlers after content is loaded
             setTimeout(attachFaqHandlers, 100);
+
+            // Optional: if JSON file exists and user updated it, override from JSON and re-render
+            try {
+                fetch('assets/data/services.json')
+                    .then(function (res) { return res.ok ? res.json() : Promise.reject(); })
+                    .then(function (jsonAll) {
+                        if (!jsonAll) return;
+                        var svc = jsonAll[serviceParam] || jsonAll['hoarding-clean-outs'];
+                        if (!svc) return;
+                        // Only re-render if image/title differ (user wants JSON to drive)
+                        var needRerender = (svc.image && svc.image !== service.image) || (svc.title && svc.title !== service.title);
+                        if (needRerender) {
+                            service = svc;
+                            serviceName = service.name;
+                            document.getElementById('page-title').textContent = service.title + ' - EZ Atlanta Junk Removal';
+                            document.getElementById('breadcrumb-service').textContent = serviceName;
+                            document.getElementById('breadcrumb-title').textContent = service.title;
+                            document.getElementById('form-title').innerHTML = 'Need <span style="color: #fff;">' + serviceName + '</span> Service?';
+                            document.getElementById('service-name-form').textContent = serviceName;
+                            var newImg = (service.image && String(service.image).trim()) ? service.image : fallbackImg;
+                            if (newImg.indexOf('source.unsplash.com') !== -1) {
+                                newImg += (newImg.indexOf('?') > -1 ? '&' : '?') + 'sig=' + encodeURIComponent(service.key || serviceParam || 'svc');
+                            }
+                            imgEl.src = newImg;
+                            imgEl.alt = serviceName;
+                            document.getElementById('service-content').innerHTML = buildServiceHtml(service);
+                            updateToc(service);
+                            setTimeout(attachFaqHandlers, 100);
+                        }
+                    })
+                    .catch(function () { /* ignore if not served over http */ });
+            } catch (e) { /* no-op */ }
         }
 
         // FAQ Toggle Function
