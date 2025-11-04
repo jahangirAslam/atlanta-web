@@ -1,0 +1,490 @@
+{
+  "hoarding-clean-outs": {
+    "key": "hoarding-clean-outs",
+    "name": "Hoarding Clean Outs",
+    "title": "Hoarding Clean Outs in Atlanta",
+    "image": "assets/images/slides/slide-v1-1.jpg",
+    "intro": [
+      "A home should be a place of comfort — not chaos. When clutter becomes hoarding, the stress and health risks can be overwhelming.",
+      "Our compassionate, discreet team helps restore homes and dignity — no judgment, just results."
+    ],
+    "whyChoose": [
+      "Experienced, empathetic cleanup professionals",
+      "Full-service: sorting, hauling, donation, and cleaning",
+      "Confidential and respectful approach",
+      "Eco-friendly disposal and donations",
+      "Transparent pricing with no surprises"
+    ],
+    "process": [
+      { "title": "Private Consultation", "desc": "We understand your situation, goals, and timeline in a confidential call or visit." },
+      { "title": "Customized Plan", "desc": "We map rooms, safety priorities, and categories to keep, donate, or discard." },
+      { "title": "Sorting & Removal", "desc": "Careful item review with your consent; we never toss what you want to keep." },
+      { "title": "Deep Cleaning", "desc": "Disinfecting, deodorizing, and restoring livability once clutter is removed." },
+      { "title": "Final Walkthrough", "desc": "We ensure safety, organization, and peace of mind before we leave." }
+    ],
+    "benefits": [
+      "Safer, healthier living conditions",
+      "Reduced stress and improved livability",
+      "Clear pathways and emergency access",
+      "Supportive, step-by-step guidance"
+    ],
+    "faqs": [
+      { "q": "How long does it take?", "a": "From hours to multiple days depending on home size and severity." },
+      { "q": "Is it confidential?", "a": "Absolutely. We prioritize privacy and discretion on every job." }
+    ]
+  },
+  "move-in-move-out": {
+    "key": "move-in-move-out",
+    "name": "Move-In & Move-Out Deep Cleaning",
+    "title": "Move-In & Move-Out Deep Cleaning in Atlanta",
+    "image": "assets/images/slides/slide-v1-2.jpg",
+    "intro": [
+      "Moving is stressful — cleaning shouldn’t be. We handle the deep clean so you can focus on your move.",
+      "From baseboards to appliances, we leave spaces spotless for landlords, buyers, and new tenants."
+    ],
+    "whyChoose": [
+      "Detailed top-to-bottom cleaning",
+      "Appliance wipe-down and degreasing",
+      "Hard-to-reach dusting and baseboards",
+      "Flexible scheduling for tight timelines",
+      "Deposit-friendly results"
+    ],
+    "process": [
+      { "title": "Assessment", "desc": "We review the space and prioritize heavy-traffic and problem areas." },
+      { "title": "Kitchen & Bath Focus", "desc": "Sanitization of sinks, counters, appliances, showers, and toilets." },
+      { "title": "Whole-Home Detail", "desc": "Dusting, vacuuming, mopping, baseboards, switches, and fixtures." },
+      { "title": "Final Inspection", "desc": "A quick walkthrough to ensure spotless results before handoff." }
+    ],
+    "benefits": [
+      "Faster move timelines",
+      "Better landlord/agent impressions",
+      "Hygienic, ready-to-live spaces"
+    ],
+    "faqs": [
+      { "q": "Do you bring supplies?", "a": "Yes, we arrive fully equipped with pro-grade supplies." },
+      { "q": "Can you coordinate with my mover?", "a": "Yes, we can schedule around movers for efficiency." }
+    ]
+  },
+  "automobile-removal": {
+    "key": "automobile-removal",
+    "name": "Automobile Removal Service",
+    "title": "Automobile Removal in Atlanta",
+    "image": "assets/images/slides/slide-v1-3.jpg",
+    "intro": [
+      "Got a damaged or unwanted vehicle taking up space? We safely remove cars from driveways, garages, and lots.",
+      "Fast response, clear pricing, and responsible recycling where applicable."
+    ],
+    "whyChoose": [
+      "Safe, insured removal",
+      "Rapid scheduling",
+      "Tight-space extraction experience",
+      "Paperwork and disposal guidance",
+      "Eco-conscious recycling"
+    ],
+    "process": [
+      { "title": "Vehicle Details", "desc": "We confirm make, model, condition, and access constraints." },
+      { "title": "Access Plan", "desc": "We plan the safest path for removal with minimal disruption." },
+      { "title": "Tow & Haul", "desc": "We load and remove the vehicle quickly and safely." },
+      { "title": "Recycle/Disposal", "desc": "We prioritize recycling and compliant disposal." }
+    ],
+    "benefits": [
+      "Clear space instantly",
+      "Avoid HOA or city fines",
+      "Responsible, legal disposal"
+    ],
+    "faqs": [
+      { "q": "Do you buy cars?", "a": "We remove and dispose; purchasing depends on condition and demand." },
+      { "q": "Titles required?", "a": "Typically yes. We’ll advise options for non-title situations." }
+    ]
+  },
+  "golf-cart-removal": {
+    "key": "golf-cart-removal",
+    "name": "Golf Cart Removal Service",
+    "title": "Golf Cart Removal in Atlanta",
+    "image": "assets/images/slides/slide-v1-1.jpg",
+    "intro": [
+      "Old golf cart not holding a charge? We remove electric and gas carts from homes, clubs, and properties.",
+      "We handle tight spaces, gated communities, and battery-safe transport."
+    ],
+    "whyChoose": [
+      "Battery-safe handling",
+      "Tight-access expertise",
+      "Fast scheduling",
+      "Donation and recycling options",
+      "Clear, upfront pricing"
+    ],
+    "process": [
+      { "title": "Condition Check", "desc": "We assess battery, fuel, and rolling condition for safe removal." },
+      { "title": "Secure Load", "desc": "We winch/roll carts onto transport and secure properly." },
+      { "title": "Eco Disposal", "desc": "We recycle batteries and components responsibly." }
+    ],
+    "benefits": [
+      "Free up storage",
+      "Avoid leaks and hazards",
+      "Environmentally sound disposal"
+    ],
+    "faqs": [
+      { "q": "Do you remove from backyards?", "a": "Yes, if there’s a safe access path; we’ll advise on options." }
+    ]
+  },
+  "heavy-equipment-removal": {
+    "key": "heavy-equipment-removal",
+    "name": "Heavy Equipment Removal",
+    "title": "Heavy Equipment Removal in Atlanta",
+    "image": "assets/images/slides/slide-v1-2.jpg",
+    "intro": [
+      "From small loaders to shop machinery, we remove and transport heavy equipment safely and efficiently.",
+      "OSHA-minded crews, proper rigging, and insured operations."
+    ],
+    "whyChoose": [
+      "Rigging and safety expertise",
+      "Licensed and insured",
+      "Jobsite coordination",
+      "After-hours availability",
+      "Responsible recycling"
+    ],
+    "process": [
+      { "title": "Site Survey", "desc": "We inspect access, weight, and rigging needs." },
+      { "title": "Plan & Permit", "desc": "We plan load paths and handle permits if required." },
+      { "title": "Removal & Haul", "desc": "Safe extraction, secure transport, and proper offloading." }
+    ],
+    "benefits": [
+      "Minimized downtime",
+      "Reduced liability",
+      "Clean, safe site turnover"
+    ],
+    "faqs": [
+      { "q": "Weight limits?", "a": "We handle a wide range; share specs and we’ll confirm capacity." }
+    ]
+  },
+  "dumpster-rental": {
+    "key": "dumpster-rental",
+    "name": "Dumpster Rental Services",
+    "title": "Dumpster Rental in Atlanta",
+    "image": "assets/images/resources/features-style2-1.jpg",
+    "intro": [
+      "Roll-off dumpsters delivered when and where you need them — perfect for projects, cleanouts, and renovations.",
+      "Flexible sizes, fair pricing, and reliable pickup schedules."
+    ],
+    "whyChoose": [
+      "Multiple bin sizes",
+      "Driveway-safe placement",
+      "Flexible rental periods",
+      "Transparent pricing",
+      "Responsive pickup"
+    ],
+    "process": [
+      { "title": "Choose Size", "desc": "We help select the right dumpster based on debris volume." },
+      { "title": "Delivery", "desc": "On-time drop-off with careful placement." },
+      { "title": "Pickup & Disposal", "desc": "Prompt haul-away and compliant disposal or recycling." }
+    ],
+    "benefits": [
+      "Keeps jobsite tidy",
+      "Speeds up projects",
+      "Cost-effective waste handling"
+    ],
+    "faqs": [
+      { "q": "What can’t go in?", "a": "Hazardous materials are restricted; we’ll provide a do-not-load list." }
+    ]
+  },
+  "residential-junk-removal": {
+    "key": "residential-junk-removal",
+    "name": "Residential Junk Removal",
+    "title": "Residential Junk Removal in Atlanta",
+    "image": "assets/images/resources/features-style2-2.jpg",
+    "intro": [
+      "From single-item pickups to full-home cleanouts, we remove clutter quickly and carefully.",
+      "Friendly crews, careful handling, and donation-first mindset."
+    ],
+    "whyChoose": [
+      "Full-service hauling",
+      "Careful in-home protection",
+      "Same/next-day options",
+      "Donation and recycling",
+      "Upfront estimates"
+    ],
+    "process": [
+      { "title": "On-Site Estimate", "desc": "We quote after seeing exactly what you need gone." },
+      { "title": "Remove & Load", "desc": "We lift, carry, and load — you don’t move a thing." },
+      { "title": "Donation/Disposal", "desc": "We donate what’s usable and dispose of the rest responsibly." }
+    ],
+    "benefits": [
+      "Clutter-free living",
+      "Time and effort saved",
+      "Eco-conscious outcomes"
+    ],
+    "faqs": [
+      { "q": "Do you take single items?", "a": "Yes — from mattresses to sofas and more." }
+    ]
+  },
+  "commercial-junk-removal": {
+    "key": "commercial-junk-removal",
+    "name": "Commercial Junk Removal",
+    "title": "Commercial Junk Removal in Atlanta",
+    "image": "assets/images/resources/features-style2-1.jpg",
+    "intro": [
+      "Offices, retail, warehouses — we clear fixtures, furniture, pallets, and more with minimal disruption.",
+      "Flexible scheduling to fit your business hours."
+    ],
+    "whyChoose": [
+      "After-hours and weekend availability",
+      "COI provided as needed",
+      "Efficient crews for large volumes",
+      "Recycling for fixtures and electronics",
+      "Project-based pricing"
+    ],
+    "process": [
+      { "title": "Walkthrough", "desc": "We assess access, elevators, and loading zones." },
+      { "title": "Removal Plan", "desc": "We stage, load, and clear with minimal impact to operations." },
+      { "title": "Final Sweep", "desc": "We broom-sweep areas and confirm completion." }
+    ],
+    "benefits": [
+      "Faster turnovers",
+      "Compliance-friendly",
+      "Cleaner, safer workplaces"
+    ],
+    "faqs": [
+      { "q": "Do you decommission offices?", "a": "Yes — cubicles, desks, electronics, and more." }
+    ]
+  },
+  "appliance-recycling": {
+    "key": "appliance-recycling",
+    "name": "Appliance Recycling & Pick Up",
+    "title": "Appliance Recycling & Pick Up in Atlanta",
+    "image": "assets/images/resources/features-style2-2.jpg",
+    "intro": [
+      "Recycle refrigerators, washers, dryers, ovens, and more — we lift, remove, and handle refrigerants safely.",
+      "Eco-friendly outcomes with donation when possible."
+    ],
+    "whyChoose": [
+      "Safe appliance handling",
+      "Refrigerant compliance",
+      "Donation-first approach",
+      "Careful home protection",
+      "Clear pricing"
+    ],
+    "process": [
+      { "title": "Access Check", "desc": "We plan safe routes to avoid damage to floors and walls." },
+      { "title": "Lift & Load", "desc": "We use proper gear to remove heavy appliances safely." },
+      { "title": "Recycle/Donate", "desc": "We prioritize reuse and compliant recycling." }
+    ],
+    "benefits": [
+      "Safer removal",
+      "Landfill diversion",
+      "No heavy lifting for you"
+    ],
+    "faqs": [
+      { "q": "Do you disconnect?", "a": "We can disconnect standard electric/water; gas requires shutoff by a pro." }
+    ]
+  },
+  "attic-cleanouts": {
+    "key": "attic-cleanouts",
+    "name": "Attic Cleanouts",
+    "title": "Attic Cleanouts in Atlanta",
+    "image": "assets/images/slides/slide-v1-3.jpg",
+    "intro": [
+      "Hot, tight, and hard to reach — we make attic cleanouts simple and safe.",
+      "Careful removal with dust control and ladder/stair protection."
+    ],
+    "whyChoose": [
+      "Tight-access expertise",
+      "Dust and debris control",
+      "Careful item handling",
+      "Donation and recycling",
+      "Before/after photos on request"
+    ],
+    "process": [
+      { "title": "Safety Setup", "desc": "Floor protection, lighting, and safe pathways established." },
+      { "title": "Sort & Remove", "desc": "We sort, stage, and remove items to the truck efficiently." },
+      { "title": "Final Tidy", "desc": "We vacuum/sweep and confirm space is clear." }
+    ],
+    "benefits": [
+      "Reclaim storage",
+      "Reduce fire risk",
+      "Cleaner air and insulation access"
+    ],
+    "faqs": [
+      { "q": "Do you remove insulation?", "a": "We remove debris; specialized insulation removal can be referred." }
+    ]
+  },
+  "bbq-grill-pickup": {
+    "key": "bbq-grill-pickup",
+    "name": "BBQ & Old Grill Pick Up",
+    "title": "BBQ & Old Grill Pick Up in Atlanta",
+    "image": "assets/images/resources/video-gallery-style2-bg.jpg",
+    "intro": [
+      "Retiring an old grill or upgrading? We remove and recycle BBQs, smokers, and outdoor cookers.",
+      "Propane handling guidance and rust-safe loading."
+    ],
+    "whyChoose": [
+      "Safe fuel handling guidance",
+      "Rust-safe removal",
+      "Deck and patio protection",
+      "Donation/recycling options",
+      "Quick pickup windows"
+    ],
+    "process": [
+      { "title": "Prep Guidance", "desc": "We advise on disconnecting tanks and cleaning out ash/grease." },
+      { "title": "Load & Secure", "desc": "We protect surfaces and secure grills for transport." },
+      { "title": "Recycle/Donate", "desc": "We recycle metals and donate working units when possible." }
+    ],
+    "benefits": [
+      "Safer outdoor spaces",
+      "Responsible disposal",
+      "No heavy lifting"
+    ],
+    "faqs": [
+      { "q": "Do you take propane tanks?", "a": "We guide proper drop-off; tanks require specific facilities." }
+    ]
+  },
+  "basement-cleanout": {
+    "key": "basement-cleanout",
+    "name": "Basement Clean-Out",
+    "title": "Basement Clean-Out in Atlanta",
+    "image": "assets/images/parallax-background/service-style1.jpg",
+    "intro": [
+      "Clear water-damaged debris, old furniture, and clutter from basements fast and safely.",
+      "We handle stairs, tight turns, and heavy items with care."
+    ],
+    "whyChoose": [
+      "Flood and debris experience",
+      "Careful stair navigation",
+      "Fast removal of bulky items",
+      "Donation and recycling",
+      "Honest, volume-based pricing"
+    ],
+    "process": [
+      { "title": "Assessment", "desc": "We review moisture risks and prioritize damaged items." },
+      { "title": "Remove & Sort", "desc": "We remove debris, separate salvageable items, and load efficiently." },
+      { "title": "Sanitize Option", "desc": "Upon request, we wipe/disinfect contact surfaces after removal." }
+    ],
+    "benefits": [
+      "Safer, usable space",
+      "Faster restoration",
+      "Less stress for homeowners"
+    ],
+    "faqs": [
+      { "q": "Do you pump water?", "a": "We don’t pump water, but we can coordinate with mitigation pros." }
+    ]
+  },
+  "bicycle-removal": {
+    "key": "bicycle-removal",
+    "name": "Bicycle Removal",
+    "title": "Bicycle Removal in Atlanta",
+    "image": "assets/images/resources/features-style2-1.jpg",
+    "intro": [
+      "Old, broken, or unused bikes? We pick up, donate, or recycle bicycles and parts.",
+      "Great for garages, storage units, and HOAs."
+    ],
+    "whyChoose": [
+      "Donation-first approach",
+      "Scrap metal recycling",
+      "Bulk pickup options",
+      "Careful property handling",
+      "Fast scheduling"
+    ],
+    "process": [
+      { "title": "Collect & Sort", "desc": "We sort working bikes for donation and scrap others responsibly." },
+      { "title": "Load & Haul", "desc": "We remove bikes, racks, and related clutter efficiently." }
+    ],
+    "benefits": [
+      "Clear storage space",
+      "Support local charities",
+      "Eco-friendly disposal"
+    ],
+    "faqs": [
+      { "q": "Do you take e-bikes?", "a": "Yes. Battery recycling is handled responsibly." }
+    ]
+  },
+  "boat-removal": {
+    "key": "boat-removal",
+    "name": "Boat Removal Services",
+    "title": "Boat Removal in Atlanta",
+    "image": "assets/images/slides/slide-v1-2.jpg",
+    "intro": [
+      "From trailers to yard-stored boats, we remove and dispose of vessels safely and legally.",
+      "We coordinate access, permits, and recycling where possible."
+    ],
+    "whyChoose": [
+      "Insured removal",
+      "Marina and yard coordination",
+      "Hull and debris recycling",
+      "Clear documentation",
+      "Upfront pricing"
+    ],
+    "process": [
+      { "title": "Verification", "desc": "We confirm ownership and access requirements." },
+      { "title": "Plan & Prep", "desc": "We plan the safest removal path and secure the vessel." },
+      { "title": "Haul & Dispose", "desc": "We transport and dispose/recycle in compliance with regulations." }
+    ],
+    "benefits": [
+      "Avoid fines",
+      "Reclaim property space",
+      "Responsible end-of-life handling"
+    ],
+    "faqs": [
+      { "q": "Titles required?", "a": "Usually required; we’ll advise based on boat type and condition." }
+    ]
+  },
+  "camper-rv-removal": {
+    "key": "camper-rv-removal",
+    "name": "Camper RV Removal",
+    "title": "Camper & RV Removal in Atlanta",
+    "image": "assets/images/slides/slide-v1-3.jpg",
+    "intro": [
+      "We remove campers, motorhomes, and travel trailers — even non-running units.",
+      "Tight-driveway expertise and HOA-friendly scheduling."
+    ],
+    "whyChoose": [
+      "Experienced with non-runners",
+      "Tight access and winching",
+      "Recycling and disposal",
+      "Permits coordinated as needed",
+      "Clear timelines"
+    ],
+    "process": [
+      { "title": "Access Review", "desc": "We review weight, height, and route limitations." },
+      { "title": "Secure & Load", "desc": "We stabilize, winch, and transport safely." },
+      { "title": "Recycle/Dispose", "desc": "Salvage and compliant disposal prioritized." }
+    ],
+    "benefits": [
+      "Free up driveway/lot",
+      "Avoid violation notices",
+      "Safe, insured removal"
+    ],
+    "faqs": [
+      { "q": "Do you buy RVs?", "a": "We focus on removal; purchasing may depend on condition and market." }
+    ]
+  },
+  "carpet-removal": {
+    "key": "carpet-removal",
+    "name": "Carpet Removal & Disposal",
+    "title": "Carpet Removal & Disposal in Atlanta",
+    "image": "assets/images/resources/features-style2-2.jpg",
+    "intro": [
+      "Old carpet harboring odors or allergens? We tear out, bag, and haul away carpet and padding.",
+      "We protect floors and dispose of materials properly."
+    ],
+    "whyChoose": [
+      "Careful tear-out",
+      "Tack strip and staple removal",
+      "Fast bagging and loading",
+      "Floor protection",
+      "Responsible disposal"
+    ],
+    "process": [
+      { "title": "Room Prep", "desc": "We clear pathways and protect adjacent flooring." },
+      { "title": "Tear-Out", "desc": "We cut, roll, and remove carpet and pads efficiently." },
+      { "title": "Detail", "desc": "We pull tack strips and staples upon request and tidy up." }
+    ],
+    "benefits": [
+      "Cleaner, healthier floors",
+      "Ready for installers",
+      "Dust and debris minimized"
+    ],
+    "faqs": [
+      { "q": "Do you install new carpet?", "a": "We don’t install, but we prep spaces for your installer." }
+    ]
+  }
+}
+

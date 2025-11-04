@@ -1125,195 +1125,14 @@
 
     <script src="assets/js/jquery-1color-switcher.min.js"></script>
 
+    <!-- data bundle for services (no fetch needed) -->
+    <script src="assets/data/services.js"></script>
+
     <!-- thm custom script -->
     <script src="assets/js/custom.js"></script>
 
     <!-- Service Dynamic Content Script -->
     <script>
-        // Service data with content
-        const serviceData = {
-            'hoarding-clean-outs': {
-                name: 'Hoarding Clean Outs',
-                title: 'Hoarding Clean Outs in Atlanta',
-                image: 'assets/images/about/about-style3-img.jpg',
-                content: `
-                    <h2 style="color: #1a9f5a; margin-bottom: 20px;">Hoarding Clean Outs in Atlanta</h2>
-                    
-                    <p>A home should be a place of comfort — not chaos. But when clutter turns into <strong>hoarding</strong>, the stress, embarrassment, and health risks can feel overwhelming. Whether it's your own space or a loved one's, it takes courage to ask for help.</p>
-                    
-                    <p>At <strong>EZ Atlanta Junk Removal</strong>, we provide professional <strong>hoarding clean outs in Atlanta</strong> with compassion, discretion, and respect. Our trained cleanup team helps restore homes and peace of mind — no judgment, just results.</p>
-                    
-                    <p>We understand that behind every pile of junk, there's a person who deserves dignity and a fresh start.</p>
-
-                    <div class="cta-box">
-                        <h3 style="color: #fff; margin-bottom: 10px;">📞 Call us today at (678) 841-8655</h3>
-                        <p style="margin: 0;">For a free, no-obligation estimate on hoarding clean outs in Atlanta</p>
-                    </div>
-
-                    <h3 id="why-choose" style="color: #1a9f5a; margin-top: 40px; margin-bottom: 20px;">Why Choose EZ Atlanta Junk Removal for Hoarding Cleanup in Atlanta</h3>
-                    
-                    <p>Hoarding situations require more than just hauling away trash — they need careful organization, deep cleaning, and an understanding of the emotional weight involved.</p>
-                    
-                    <p>Our reliable hoarding cleanup services are designed to make the cleanout process as easy and stress-free as possible for you and your family.</p>
-                    
-                    <p><strong>Here's what sets us apart:</strong></p>
-                    
-                    <ul style="list-style: none; padding-left: 0; margin-top: 20px;">
-                        <li style="margin-bottom: 15px;">💪 <strong>Experienced, Compassionate Professionals</strong> – Trained cleanout experts who treat every home and client with empathy.</li>
-                        <li style="margin-bottom: 15px;">🧹 <strong>Full-Service Hoarding Clean Outs</strong> – We remove unwanted items, clean, sanitize, and help restore order.</li>
-                        <li style="margin-bottom: 15px;">🛠 <strong>We Handle Everything</strong> – From sorting and hauling to recycling and donation.</li>
-                        <li style="margin-bottom: 15px;">🌿 <strong>Eco-Friendly Disposal</strong> – Whenever possible, we recycle and donate usable items to local charities in Atlanta.</li>
-                        <li style="margin-bottom: 15px;">💯 <strong>Upfront Pricing, No Surprises</strong> – Clear estimates, honest service, and zero hidden fees.</li>
-                    </ul>
-                    
-                    <p>When you choose EZ Atlanta Junk Removal, you're not just hiring a cleanup crew — you're partnering with a veteran-owned local business that takes pride in helping people reclaim their homes and their peace of mind.</p>
-
-                    <h3 id="process" style="color: #1a9f5a; margin-top: 40px; margin-bottom: 20px;">Our Hoarder Cleanout Process</h3>
-                    
-                    <p>We follow a safe, respectful, and structured approach for every hoarding situation — big or small.</p>
-                    
-                    <div style="margin-top: 30px;">
-                        <h4 style="color: #333; margin-bottom: 10px;">1. Private Consultation</h4>
-                        <p>We start by understanding your specific situation. Whether you're helping a family member or managing your own space, we'll discuss your goals, timeline, and level of involvement.</p>
-                    </div>
-                    
-                    <div style="margin-top: 25px;">
-                        <h4 style="color: #333; margin-bottom: 10px;">2. Customized Cleanup Plan</h4>
-                        <p>No two hoarding cases are the same. We create a personalized plan to address your home's layout, the items to keep or discard, and any hazardous waste or health risks present.</p>
-                    </div>
-                    
-                    <div style="margin-top: 25px;">
-                        <h4 style="color: #333; margin-bottom: 10px;">3. Sorting & Removal</h4>
-                        <p>Our professional team carefully sorts through personal items, separating what can be kept, donated, or responsibly disposed of. We treat every belonging with respect — nothing gets tossed without your consent.</p>
-                    </div>
-                    
-                    <div style="margin-top: 25px;">
-                        <h4 style="color: #333; margin-bottom: 10px;">4. Cleaning & Sanitization</h4>
-                        <p>Once clutter is removed, we perform deep cleaning, including dusting, vacuuming, disinfecting, and deodorizing the entire space to restore a healthy environment.</p>
-                    </div>
-                    
-                    <div style="margin-top: 25px;">
-                        <h4 style="color: #333; margin-bottom: 10px;">5. Final Walkthrough & Peace of Mind</h4>
-                        <p>Before we leave, we ensure everything is clean, safe, and organized. You'll be amazed at how much lighter your home — and life — feels.</p>
-                    </div>
-
-                    <h3 id="compassionate" style="color: #1a9f5a; margin-top: 40px; margin-bottom: 20px;">A Compassionate Approach to a Difficult Situation</h3>
-                    
-                    <p>We know hoarding cleanup isn't just another junk removal job — it's deeply personal. Our crews are trained not only in cleanup services but also in sensitivity and confidentiality.</p>
-                    
-                    <p><strong>We've helped countless Atlanta families dealing with hoarding situations involving:</strong></p>
-                    
-                    <ul style="margin-top: 15px; margin-bottom: 20px;">
-                        <li>Years of collected items</li>
-                        <li>Fire hazards and blocked exits</li>
-                        <li>Expired food and trash accumulation</li>
-                        <li>Animal waste and unsanitary conditions</li>
-                        <li>Emotional attachment to belongings</li>
-                    </ul>
-                    
-                    <p>We don't judge — we help. Our goal is to guide you through this process step by step, ensuring your safety, dignity, and peace of mind.</p>
-
-                    <h3 id="risks" style="color: #1a9f5a; margin-top: 40px; margin-bottom: 20px;">The Risks of Ignoring Hoarding Situations</h3>
-                    
-                    <p>Ignoring hoarding issues can lead to serious problems, including:</p>
-                    
-                    <ul style="margin-top: 15px; margin-bottom: 20px;">
-                        <li>Health risks from mold, bacteria, and pests</li>
-                        <li>Structural damage to your home</li>
-                        <li>Fire hazards from blocked exits and electrical issues</li>
-                        <li>Emotional strain on families and loved ones</li>
-                    </ul>
-                    
-                    <p>Taking the first step toward cleanup can feel hard — but with EZ Atlanta Junk Removal, you'll never face it alone. We handle everything with care, professionalism, and complete confidentiality.</p>
-
-                    <h3 id="why-atlanta" style="color: #1a9f5a; margin-top: 40px; margin-bottom: 20px;">Why Atlanta Chooses EZ Atlanta Junk Removal</h3>
-                    
-                    <p>Atlanta residents trust us because we combine compassion, professionalism, and results. We're not just another junk removal business — we're your cleanup partner.</p>
-                    
-                    <p><strong>We help:</strong></p>
-                    
-                    <ul style="margin-top: 15px; margin-bottom: 20px;">
-                        <li>Homeowners facing overwhelming clutter</li>
-                        <li>Property managers handling estate cleanouts</li>
-                        <li>Businesses cleaning up commercial spaces</li>
-                        <li>Families supporting a loved one through recovery</li>
-                    </ul>
-                    
-                    <p>Our eco-friendly solutions, upfront pricing, and trained team make the entire process smooth and manageable.</p>
-
-                    <div class="cta-box">
-                        <h3 style="color: #fff; margin-bottom: 10px;">📞 Call (678) 841-8655 now</h3>
-                        <p style="margin: 0;">Schedule your hoarding clean out in Atlanta and start creating a safer, cleaner space today</p>
-                    </div>
-
-                    <h3 id="get-started" style="color: #1a9f5a; margin-top: 40px; margin-bottom: 20px;">Get Your Home and Your Life Back</h3>
-                    
-                    <p>Clutter doesn't define you — it's just a temporary challenge. And with our help, you can overcome it.</p>
-                    
-                    <p>Whether it's a single room, a full home, or a property cleanout, <strong>EZ Atlanta Junk Removal</strong> is ready to assist with discretion, compassion, and professionalism.</p>
-                    
-                    <p>Your fresh start begins with one call.</p>
-                    
-                    <p><strong>📞 Call (678) 841-8655</strong> or visit our website to request your free estimate today.</p>
-                    <p>Let's work together to bring order, safety, and peace back to your home.</p>
-
-                    <div class="faq-accordion" style="margin-top: 50px;">
-                        <h3 style="color: #1a9f5a; margin-bottom: 30px; text-align: center;">Frequently Asked Questions</h3>
-                        
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <span>What is included in your hoarding clean out service?</span>
-                                <span class="faq-icon">+</span>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Our hoarding clean out service includes a complete consultation, customized cleanup plan, sorting and removal of items, deep cleaning and sanitization, and a final walkthrough. We handle everything from unwanted items to hazardous waste, and we donate or recycle whenever possible.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <span>How long does a hoarding cleanup take?</span>
-                                <span class="faq-icon">+</span>
-                            </div>
-                            <div class="faq-answer">
-                                <p>The timeline varies depending on the size of the space and the severity of the hoarding situation. A single room may take a few hours, while a full home can take 1-3 days. We'll provide an accurate estimate during our initial consultation.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <span>Are your services confidential?</span>
-                                <span class="faq-icon">+</span>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Absolutely. We understand the sensitive nature of hoarding situations and treat every client with complete discretion and confidentiality. Our team is trained to handle these situations with empathy and professionalism.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <span>Can you help decide what items to keep or donate?</span>
-                                <span class="faq-icon">+</span>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Yes! Our team can help guide you through the decision-making process, but we never throw anything away without your consent. We work at your pace and respect your attachment to belongings while helping you make informed decisions.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <span>Do you offer deep cleaning after junk removal?</span>
-                                <span class="faq-icon">+</span>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Yes, deep cleaning is included in our hoarding cleanup service. After removing all unwanted items, we thoroughly clean, disinfect, and deodorize the space to restore it to a healthy, livable condition.</p>
-                            </div>
-                        </div>
-                    </div>
-                `
-            }
-        };
-
         // Get service from URL parameter
         function getUrlParameter(name) {
             name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
@@ -1322,39 +1141,128 @@
             return results === null ? 'hoarding-clean-outs' : decodeURIComponent(results[1].replace(/\+/g, ' '));
         }
 
-        // Update page content based on service
+        function buildServiceHtml(service) {
+            var html = '';
+            html += '<h2 style="color: #1a9f5a; margin-bottom: 20px;">' + service.title + '</h2>';
+
+            if (Array.isArray(service.intro)) {
+                service.intro.forEach(function (p) {
+                    html += '<p>' + p + '</p>';
+                });
+            }
+
+            html += '<div class="cta-box">' +
+                '<h3 style="color: #fff; margin-bottom: 10px;">📞 Call us today at (678) 841-8655</h3>' +
+                '<p style="margin: 0;">Get a free, no-obligation estimate</p>' +
+            '</div>';
+
+            // Why Choose
+            html += '<h3 id="why-choose" style="color: #1a9f5a; margin-top: 40px; margin-bottom: 20px;">Why Choose EZ Atlanta Junk Removal for ' + service.name + '</h3>';
+            if (Array.isArray(service.whyChoose)) {
+                html += '<ul style="list-style: none; padding-left: 0; margin-top: 20px;">';
+                service.whyChoose.forEach(function (item) {
+                    html += '<li style="margin-bottom: 15px;">' + item + '</li>';
+                });
+                html += '</ul>';
+            }
+
+            // Process
+            if (Array.isArray(service.process) && service.process.length) {
+                html += '<h3 id="process" style="color: #1a9f5a; margin-top: 40px; margin-bottom: 20px;">Our Process</h3>';
+                service.process.forEach(function (step, idx) {
+                    html += '<div style="margin-top: 25px;">';
+                    html += '<h4 style="color: #333; margin-bottom: 10px;">' + (idx + 1) + '. ' + step.title + '</h4>';
+                    html += '<p>' + step.desc + '</p>';
+                    html += '</div>';
+                });
+            }
+
+            // Benefits
+            if (Array.isArray(service.benefits) && service.benefits.length) {
+                html += '<h3 id="benefits" style="color: #1a9f5a; margin-top: 40px; margin-bottom: 20px;">Benefits</h3>';
+                html += '<ul style="margin-top: 15px; margin-bottom: 20px;">';
+                service.benefits.forEach(function (b) {
+                    html += '<li>' + b + '</li>';
+                });
+                html += '</ul>';
+            }
+
+            // FAQs
+            if (Array.isArray(service.faqs) && service.faqs.length) {
+                html += '<div class="faq-accordion" style="margin-top: 50px;">';
+                html += '<h3 style="color: #1a9f5a; margin-bottom: 30px; text-align: center;">Frequently Asked Questions</h3>';
+                service.faqs.forEach(function (f) {
+                    html += '<div class="faq-item">';
+                    html += '<div class="faq-question"><span>' + f.q + '</span><span class="faq-icon">+</span></div>';
+                    html += '<div class="faq-answer"><p>' + f.a + '</p></div>';
+                    html += '</div>';
+                });
+                html += '</div>';
+            }
+
+            return html;
+        }
+
+        function updateToc(service) {
+            var tocTitle = document.getElementById('toc-title');
+            var tocList = document.getElementById('toc-list');
+            if (tocTitle) tocTitle.textContent = service.title;
+            if (tocList) {
+                tocList.innerHTML = '';
+                tocList.innerHTML += '<li style="margin-bottom: 8px;"><a href="#why-choose" style="color: #1a9f5a; text-decoration: none;">Why Choose</a></li>';
+                if (Array.isArray(service.process) && service.process.length) {
+                    tocList.innerHTML += '<li style="margin-bottom: 8px;"><a href="#process" style="color: #1a9f5a; text-decoration: none;">Our Process</a></li>';
+                }
+                if (Array.isArray(service.benefits) && service.benefits.length) {
+                    tocList.innerHTML += '<li style="margin-bottom: 8px;"><a href="#benefits" style="color: #1a9f5a; text-decoration: none;">Benefits</a></li>';
+                }
+                if (Array.isArray(service.faqs) && service.faqs.length) {
+                    tocList.innerHTML += '<li style="margin-bottom: 8px;"><a href="#" style="color: #1a9f5a; text-decoration: none;">FAQs</a></li>';
+                }
+            }
+        }
+
+        function attachFaqHandlers() {
+            const faqQuestions = document.querySelectorAll('#service-content .faq-question');
+            faqQuestions.forEach(function (q) {
+                q.addEventListener('click', function () { toggleFaq(this); });
+            });
+        }
+
+        // Update page content based on service via local JS data (no fetch)
         function updateServiceContent() {
             const serviceParam = getUrlParameter('service');
-            const service = serviceData[serviceParam] || serviceData['hoarding-clean-outs'];
-            const serviceName = service.name;
+            var all = window.SERVICES_DATA || {};
+            var service = all[serviceParam] || all['hoarding-clean-outs'] || {
+                name: 'Service',
+                title: 'Service',
+                image: 'assets/images/about/about-style3-img.jpg',
+                intro: ['Content is temporarily unavailable.']
+            };
+            var serviceName = service.name;
 
             // Update page title
-            document.getElementById('page-title').textContent = `${service.title} - EZ Atlanta Junk Removal`;
-            
+            document.getElementById('page-title').textContent = service.title + ' - EZ Atlanta Junk Removal';
+
             // Update breadcrumb
             document.getElementById('breadcrumb-service').textContent = serviceName;
             document.getElementById('breadcrumb-title').textContent = service.title;
 
             // Update form title
-            document.getElementById('form-title').innerHTML = `Need <span style="color: #fff;">${serviceName}</span> Service?`;
+            document.getElementById('form-title').innerHTML = 'Need <span style="color: #fff;">' + serviceName + '</span> Service?';
             document.getElementById('service-name-form').textContent = serviceName;
 
             // Update service image
-            document.getElementById('service-image').src = service.image;
-            document.getElementById('service-image').alt = serviceName;
+            var imgEl = document.getElementById('service-image');
+            imgEl.src = service.image || 'assets/images/about/about-style3-img.jpg';
+            imgEl.alt = serviceName;
 
             // Update service content
-            document.getElementById('service-content').innerHTML = service.content;
-            
+            document.getElementById('service-content').innerHTML = buildServiceHtml(service);
+            updateToc(service);
+
             // Re-attach FAQ click handlers after content is loaded
-            setTimeout(function() {
-                const faqQuestions = document.querySelectorAll('#service-content .faq-question');
-                faqQuestions.forEach(question => {
-                    question.addEventListener('click', function() {
-                        toggleFaq(this);
-                    });
-                });
-            }, 100);
+            setTimeout(attachFaqHandlers, 100);
         }
 
         // FAQ Toggle Function
