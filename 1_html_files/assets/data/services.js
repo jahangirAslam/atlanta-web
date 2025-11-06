@@ -2,7 +2,7 @@ window.SERVICES_DATA = {
   "hoarding-clean-outs": {
     "key": "hoarding-clean-outs",
     "name": "Hoarding Clean Outs",
-    "title": "Hoarding Clean Outs in Atlanta",
+    "title": "Hoarding Clean Outs in Quick",
     "image": "https://source.unsplash.com/featured/800x600?hoarding,clutter,cleanup",
     "intro": [
       "A home should be a place of comfort — not chaos. When clutter becomes hoarding, the stress and health risks can be overwhelming.",
@@ -36,7 +36,7 @@ window.SERVICES_DATA = {
   "move-in-move-out": {
     "key": "move-in-move-out",
     "name": "Move-In & Move-Out Deep Cleaning",
-    "title": "Move-In & Move-Out Deep Cleaning in Atlanta",
+    "title": "Move-In & Move-Out Deep Cleaning in Quick",
     "image": "https://source.unsplash.com/featured/800x600?move,cleaning,apartment",
     "intro": [
       "Moving is stressful — cleaning shouldn’t be. We handle the deep clean so you can focus on your move.",
@@ -68,7 +68,7 @@ window.SERVICES_DATA = {
   "automobile-removal": {
     "key": "automobile-removal",
     "name": "Automobile Removal Service",
-    "title": "Automobile Removal in Atlanta",
+    "title": "Automobile Removal in Quick",
     "image": "https://source.unsplash.com/featured/800x600?car,removal,towing",
     "intro": [
       "Got a damaged or unwanted vehicle taking up space? We safely remove cars from driveways, garages, and lots.",
@@ -100,7 +100,7 @@ window.SERVICES_DATA = {
   "golf-cart-removal": {
     "key": "golf-cart-removal",
     "name": "Golf Cart Removal Service",
-    "title": "Golf Cart Removal in Atlanta",
+    "title": "Golf Cart Removal in Quick",
     "image": "https://source.unsplash.com/featured/800x600?golf,cart,vehicle",
     "intro": [
       "Old golf cart not holding a charge? We remove electric and gas carts from homes, clubs, and properties.",
@@ -130,7 +130,7 @@ window.SERVICES_DATA = {
   "heavy-equipment-removal": {
     "key": "heavy-equipment-removal",
     "name": "Heavy Equipment Removal",
-    "title": "Heavy Equipment Removal in Atlanta",
+    "title": "Heavy Equipment Removal in Quick",
     "image": "https://source.unsplash.com/featured/800x600?heavy,equipment,industrial",
     "intro": [
       "From small loaders to shop machinery, we remove and transport heavy equipment safely and efficiently.",
@@ -160,7 +160,7 @@ window.SERVICES_DATA = {
   "dumpster-rental": {
     "key": "dumpster-rental",
     "name": "Dumpster Rental Services",
-    "title": "Dumpster Rental in Atlanta",
+    "title": "Dumpster Rental in Quick",
     "image": "https://source.unsplash.com/featured/800x600?dumpster,roll-off",
     "intro": [
       "Roll-off dumpsters delivered when and where you need them — perfect for projects, cleanouts, and renovations.",
@@ -190,7 +190,7 @@ window.SERVICES_DATA = {
   "residential-junk-removal": {
     "key": "residential-junk-removal",
     "name": "Residential Junk Removal",
-    "title": "Residential Junk Removal in Atlanta",
+    "title": "Residential Junk Removal in Quick",
     "image": "https://source.unsplash.com/featured/800x600?junk,removal,home",
     "intro": [
       "From single-item pickups to full-home cleanouts, we remove clutter quickly and carefully.",
@@ -220,7 +220,7 @@ window.SERVICES_DATA = {
   "commercial-junk-removal": {
     "key": "commercial-junk-removal",
     "name": "Commercial Junk Removal",
-    "title": "Commercial Junk Removal in Atlanta",
+    "title": "Commercial Junk Removal in Quick",
     "image": "https://source.unsplash.com/featured/800x600?commercial,warehouse,cleanup",
     "intro": [
       "Offices, retail, warehouses — we clear fixtures, furniture, pallets, and more with minimal disruption.",
@@ -250,7 +250,7 @@ window.SERVICES_DATA = {
   "appliance-recycling": {
     "key": "appliance-recycling",
     "name": "Appliance Recycling & Pick Up",
-    "title": "Appliance Recycling & Pick Up in Atlanta",
+    "title": "Appliance Recycling & Pick Up in Quick",
     "image": "https://source.unsplash.com/featured/800x600?appliance,recycling",
     "intro": [
       "Recycle refrigerators, washers, dryers, ovens, and more — we lift, remove, and handle refrigerants safely.",
@@ -280,7 +280,7 @@ window.SERVICES_DATA = {
   "attic-cleanouts": {
     "key": "attic-cleanouts",
     "name": "Attic Cleanouts",
-    "title": "Attic Cleanouts in Atlanta",
+    "title": "Attic Cleanouts in Quick",
     "image": "https://source.unsplash.com/featured/800x600?attic,storage,boxes",
     "intro": [
       "Hot, tight, and hard to reach — we make attic cleanouts simple and safe.",
@@ -310,7 +310,7 @@ window.SERVICES_DATA = {
   "bbq-grill-pickup": {
     "key": "bbq-grill-pickup",
     "name": "BBQ & Old Grill Pick Up",
-    "title": "BBQ & Old Grill Pick Up in Atlanta",
+    "title": "BBQ & Old Grill Pick Up in Quick",
     "image": "https://source.unsplash.com/featured/800x600?bbq,grill,backyard",
     "intro": [
       "Retiring an old grill or upgrading? We remove and recycle BBQs, smokers, and outdoor cookers.",
@@ -340,7 +340,7 @@ window.SERVICES_DATA = {
   "basement-cleanout": {
     "key": "basement-cleanout",
     "name": "Basement Clean-Out",
-    "title": "Basement Clean-Out in Atlanta",
+    "title": "Basement Clean-Out in Quick",
     "image": "https://source.unsplash.com/featured/800x600?basement,cleanout",
     "intro": [
       "Clear water-damaged debris, old furniture, and clutter from basements fast and safely.",
@@ -370,7 +370,7 @@ window.SERVICES_DATA = {
   "bicycle-removal": {
     "key": "bicycle-removal",
     "name": "Bicycle Removal",
-    "title": "Bicycle Removal in Atlanta",
+    "title": "Bicycle Removal in Quick",
     "image": "https://source.unsplash.com/featured/800x600?bicycle,recycling",
     "intro": [
       "Old, broken, or unused bikes? We pick up, donate, or recycle bicycles and parts.",
@@ -399,7 +399,7 @@ window.SERVICES_DATA = {
   "boat-removal": {
     "key": "boat-removal",
     "name": "Boat Removal Services",
-    "title": "Boat Removal in Atlanta",
+    "title": "Boat Removal in Quick",
     "image": "https://source.unsplash.com/featured/800x600?boat,removal",
     "intro": [
       "From trailers to yard-stored boats, we remove and dispose of vessels safely and legally.",
@@ -429,7 +429,7 @@ window.SERVICES_DATA = {
   "camper-rv-removal": {
     "key": "camper-rv-removal",
     "name": "Camper RV Removal",
-    "title": "Camper & RV Removal in Atlanta",
+    "title": "Camper & RV Removal in Quick",
     "image": "https://source.unsplash.com/featured/800x600?rv,camper,removal",
     "intro": [
       "We remove campers, motorhomes, and travel trailers — even non-running units.",
@@ -459,7 +459,7 @@ window.SERVICES_DATA = {
   "carpet-removal": {
     "key": "carpet-removal",
     "name": "Carpet Removal & Disposal",
-    "title": "Carpet Removal & Disposal in Atlanta",
+    "title": "Carpet Removal & Disposal in Quick",
     "image": "https://source.unsplash.com/featured/800x600?carpet,removal",
     "intro": [
       "Old carpet harboring odors or allergens? We tear out, bag, and haul away carpet and padding.",

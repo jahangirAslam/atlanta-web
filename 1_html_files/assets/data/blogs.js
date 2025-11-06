@@ -1,11 +1,11 @@
 window.BLOG_POSTS = {
   "garage-cleanouts-atlanta": {
     "slug": "garage-cleanouts-atlanta",
-    "title": "Garage Cleanouts & Home Organization in Atlanta, GA",
+    "title": "Garage Cleanouts & Home Organization in Quick, GA",
     "author": "Amanda B",
     "date": { "day": "18", "mon": "Sep" },
     "hero": "assets/images/blog/blog-v3-1.jpg",
-    "contentHtml": "<p>Atlanta, GA is a city full of energy—... cluttered garages that no longer fit a car.</p><p>If your garage has turned into a catch-all ... organized, functional, and stress-free.</p><h4>1. Why Garage Cleanouts Matter in Atlanta</h4><p>Garages are often the most neglected...</p><ul><li>Provides safer access...</li><li>Creates extra storage...</li><li>Adds usable square footage...</li><li>Makes daily life easier...</li></ul><h4>2. Step One: Declutter the Right Way</h4><p>The first step in any garage cleanout is sorting...</p>"
+    "contentHtml": "<p>Quick, GA is a city full of energy—... cluttered garages that no longer fit a car.</p><p>If your garage has turned into a catch-all ... organized, functional, and stress-free.</p><h4>1. Why Garage Cleanouts Matter in Quick</h4><p>Garages are often the most neglected...</p><ul><li>Provides safer access...</li><li>Creates extra storage...</li><li>Adds usable square footage...</li><li>Makes daily life easier...</li></ul><h4>2. Step One: Declutter the Right Way</h4><p>The first step in any garage cleanout is sorting...</p>"
   },
   "clutter-free-alpharetta": {
     "slug": "clutter-free-alpharetta",
