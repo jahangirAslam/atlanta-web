@@ -436,6 +436,31 @@
     transform: translateY(30px);
     transition: all 100ms ease;
     z-index: 100;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.1);
+}
+
+/* Scrollbar styling for dropdown menus */
+
+.main-menu .navigation>li>ul::-webkit-scrollbar {
+    width: 6px;
+}
+
+.main-menu .navigation>li>ul::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+.main-menu .navigation>li>ul::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+.main-menu .navigation>li>ul::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .main-menu .navigation>li>ul:before {
