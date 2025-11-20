@@ -106,6 +106,32 @@
             top: 20px;
             z-index: 10;
         }
+
+        .zip-pill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .zip-pill-list a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            /* padding: 2px 2px; */
+            border-radius: 999px;
+            /* background-color: #f0f5f2; */
+            color: #1a9f5a;
+            font-weight: 600;
+            text-decoration: none;
+            /* border: 1px solid #dbe7df; */
+            transition: all 0.2s ease-in-out;
+        }
+
+        .zip-pill-list a:hover {
+            /* background-color: #1a9f5a; */
+            color: #707070;
+            /* border-color: #1a9f5a; */
+        }
     </style>
     
     <!-- Favicon -->
@@ -1089,11 +1115,11 @@
                             <h3 style="color: #1a9f5a; margin-bottom: 20px; font-size: 24px; font-weight: 700;">Zip Codes We Service</h3>
                             <div class="service-area-content">
                                 <div id="zipShort">
-                                    <p style="line-height: 1.8; color: #666;">39901, 31199, 31198, 31197, 31196, 31195, 31193, 31192, 31191, 31156, 31150, 31146, 31145, 31141, 31139, 31132, 31131, 31126, 31119, 31107, 31106, 30542, 30519, 30518, 30515, 30399, 30398, 30396, 30394, 30392, 30390, 30389, 30388, 30387, 30386, 30385, 30384, 30380, 30379, 30378, 30377, 30376, 30375, 30374...</p>
+                                    <p style="line-height: 1.8; color: #666;">Loading zip codes we serve...</p>
                                 </div>
                                 <div id="zipFull" style="display: none;">
-                                    <p style="line-height: 1.8; color: #666;">39901, 31199, 31198, 31197, 31196, 31195, 31193, 31192, 31191, 31156, 31150, 31146, 31145, 31141, 31139, 31132, 31131, 31126, 31119, 31107, 31106, 30542, 30519, 30518, 30515, 30399, 30398, 30396, 30394, 30392, 30390, 30389, 30388, 30387, 30386, 30385, 30384, 30380, 30379, 30378, 30377, 30376, 30375, 30374, 30371, 30370, 30369, 30368, 30366, 30364, 30363, 30362, 30361, 30360, 30359, 30358, 30357, 30356, 30355, 30354, 30353, 30350, 30349, 30348, 30347, 30346, 30345, 30344, 30343, 30342, 30341, 30340, 30339, 30338, 30337, 30336, 30334, 30333, 30332, 30331, 30330, 30329, 30328, 30327, 30326, 30325, 30324, 30322, 30321, 30320, 30319, 30318, 30317, 30316, 30315, 30314, 30313, 30312, 30311, 30310, 30309, 30308, 30307, 30306, 30305, 30304, 30303, 30302, 30301, 30298, 30297, 30296, 30294, 30291, 30290, 30288, 30287, 30281, 30277, 30275, 30274, 30273, 30272, 30271, 30270, 30269, 30268, 30265, 30264, 30263, 30260, 30253, 30252, 30250, 30238, 30237, 30236, 30232, 30228, 30215, 30214, 30213, 30189, 30188, 30187, 30169, 30168, 30160, 30157, 30156, 30154, 30152, 30146, 30144, 30142, 30141, 30137, 30135, 30134, 30133, 30132, 30127, 30126, 30123, 30122, 30121, 30120, 30115, 30111, 30106, 30102, 30101, 30099, 30098, 30097, 30096, 30095, 30094, 30093, 30092, 30091, 30090, 30088, 30087, 30086, 30085, 30084, 30083, 30082, 30081, 30080, 30079, 30078, 30077, 30076, 30075, 30074, 30072, 30071, 30070, 30069, 30068, 30067, 30066, 30065, 30064, 30063, 30062, 30061, 30060, 30058, 30052, 30049, 30048, 30047, 30046, 30045, 30044, 30043, 30042, 30041, 30039, 30038, 30037, 30036, 30035, 30034, 30033, 30032, 30031, 30030, 30029, 30028, 30026, 30024, 30023, 30022, 30021, 30019, 30017, 30016, 30013, 30012, 30010, 30009, 30008, 30007, 30006, 30005, 30004, 30003, 30002.</p>
-                            </div>
+                                    <p style="line-height: 1.8; color: #666;">Loading every zip code we cover...</p>
+                                </div>
                                 <button onclick="toggleZip()" id="zipBtn" class="btn-one" style="margin-top: 15px;">
                                     <span class="txt">See More</span>
                                 </button>
@@ -1474,6 +1500,7 @@
     <script src="assets/js/wow.js"></script>
 
     <script src="assets/js/jquery-1color-switcher.min.js"></script>
+    <script src="assets/js/zip-data.js"></script>
 
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM&callback=initMap">
@@ -1505,6 +1532,10 @@
             var full = document.getElementById('zipFull');
             var btn = document.getElementById('zipBtn');
             
+            if (!full) {
+                return;
+            }
+
             if (full.style.display === 'none') {
                 short.style.display = 'none';
                 full.style.display = 'block';
@@ -1515,6 +1546,45 @@
                 btn.innerHTML = '<span class="txt">See More</span>';
             }
         }
+
+        function renderZipGroup(container, zips) {
+            if (!container || !zips || !zips.length) {
+                return;
+            }
+
+            const listWrapper = document.createElement('div');
+            listWrapper.className = 'zip-pill-list';
+
+            zips.forEach(zip => {
+                const link = document.createElement('a');
+                link.href = `zip-details.html?zip=${zip}`;
+                link.textContent = zip;
+                listWrapper.appendChild(link);
+            });
+
+            container.innerHTML = '';
+            container.appendChild(listWrapper);
+        }
+
+        function renderZipLists() {
+            if (!window.ZipServiceData || !window.ZipServiceData.orderedZips) {
+                return;
+            }
+
+            const ordered = window.ZipServiceData.orderedZips.slice();
+            if (!ordered.length) {
+                return;
+            }
+
+            const SHORT_COUNT = 40;
+            const shortContainer = document.getElementById('zipShort');
+            const fullContainer = document.getElementById('zipFull');
+
+            renderZipGroup(shortContainer, ordered.slice(0, SHORT_COUNT));
+            renderZipGroup(fullContainer, ordered);
+        }
+
+        document.addEventListener('DOMContentLoaded', renderZipLists);
     </script>
 
 
