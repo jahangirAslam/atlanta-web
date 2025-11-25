@@ -1099,11 +1099,11 @@
                             <h3 style="color: #1a9f5a; margin-bottom: 20px; font-size: 24px; font-weight: 700;">Cities We Service</h3>
                             <div class="service-area-content">
                                 <div id="citiesShort">
-                                    <p style="line-height: 1.8; color: #666;">Gwinnett County, Cassville, Flowery Branch, Gainesville, Sargent, Cartersville, Newnan, Sharpsburg, Cumming, Porterdale, Dacula, Covington, Emerson, Buford, Peachtree City, Lebanon, Loganville, Canton, Hampton, Winston, Dallas, Holly Springs, Mcdonough, Palmetto, Suwanee...</p>
+                                    <p style="line-height: 1.8; color: #666;">Loading nearby cities...</p>
                                 </div>
                                 <div id="citiesFull" style="display: none;">
-                                    <p style="line-height: 1.8; color: #666;">Gwinnett County, Cassville, Flowery Branch, Gainesville, Sargent, Cartersville, Newnan, Sharpsburg, Cumming, Porterdale, Dacula, Covington, Emerson, Buford, Peachtree City, Lebanon, Loganville, Canton, Hampton, Winston, Dallas, Holly Springs, Mcdonough, Palmetto, Suwanee, Lovejoy, Grayson, Acworth, Tyrone, Hiram, Woodstock, Fayetteville, Conyers, Inman, Kennesaw, Snellville, Lawrenceville, North Metro, Fairburn, Douglasville, Stockbridge, Jonesboro, Duluth, Powder Springs, Alpharetta, Union City, Roswell, Riverdale, Rex, Lithonia, Lilburn, Lithia Springs, Red Oak, Morrow, Norcross, Redan, Austell, Ellenwood, Clarkdale, Forest Park, Marietta, Stone Mountain, Conley, Pine Lake, Mableton, Tucker, Smyrna, Clarkston, Scottdale, Avondale Estates, Decatur, Candler Park, Cabbagetown, Inman Park, Old Fourth Ward, East Quick, Pittsburgh, Atlantic Station, Midtown Quick, Downtown Quick, Little Five Points.</p>
-                            </div>
+                                    <p style="line-height: 1.8; color: #666;">Loading complete city list...</p>
+                                </div>
                                 <button onclick="toggleCities()" id="citiesBtn" class="btn-one" style="margin-top: 15px;">
                                     <span class="txt">See More</span>
                                 </button>
@@ -1500,6 +1500,7 @@
     <script src="assets/js/wow.js"></script>
 
     <script src="assets/js/jquery-1color-switcher.min.js"></script>
+    <script src="assets/js/city-data.js"></script>
     <script src="assets/js/zip-data.js"></script>
 
     <script async defer
@@ -1584,7 +1585,60 @@
             renderZipGroup(fullContainer, ordered);
         }
 
-        document.addEventListener('DOMContentLoaded', renderZipLists);
+        function renderCityGroup(container, cities) {
+            if (!container) {
+                return;
+            }
+
+            container.innerHTML = '';
+            if (!cities || !cities.length || !window.CityServiceData) {
+                container.innerHTML = '<p style="line-height:1.8; color:#666;">City list coming soon.</p>';
+                return;
+            }
+
+            var slugify =
+                (window.CityServiceData && typeof window.CityServiceData.slugify === 'function')
+                    ? window.CityServiceData.slugify
+                    : function (value) {
+                        return (value || '').toString().trim().toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+                    };
+
+            const listWrapper = document.createElement('div');
+            listWrapper.className = 'zip-pill-list';
+
+            cities.forEach(function (cityName) {
+                const slug = slugify(cityName);
+                const link = document.createElement('a');
+                link.href = 'city-details.html?city=' + encodeURIComponent(slug);
+                link.textContent = cityName;
+                listWrapper.appendChild(link);
+            });
+
+            container.appendChild(listWrapper);
+        }
+
+        function renderCityLists() {
+            if (!window.CityServiceData || !window.CityServiceData.orderedCities) {
+                return;
+            }
+
+            const names = window.CityServiceData.orderedCities.slice();
+            if (!names.length) {
+                return;
+            }
+
+            const SHORT_COUNT = 24;
+            const shortContainer = document.getElementById('citiesShort');
+            const fullContainer = document.getElementById('citiesFull');
+
+            renderCityGroup(shortContainer, names.slice(0, SHORT_COUNT));
+            renderCityGroup(fullContainer, names);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            renderZipLists();
+            renderCityLists();
+        });
     </script>
 
 

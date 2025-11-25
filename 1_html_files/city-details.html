@@ -3,16 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title id="page-title">Zip Code Junk Removal - Quick Junk Removal</title>
-
-    <!-- responsive meta -->
+    <title id="page-title">City Junk Removal - Quick Junk Removal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Google Fonts -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/animate.css">
@@ -32,7 +27,6 @@
     <link rel="stylesheet" href="assets/css/scrollbar.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
 
-    <!-- Module css -->
     <link rel="stylesheet" href="assets/css/module-css/header-section.css">
     <link rel="stylesheet" href="assets/css/module-css/banner-section.css">
     <link rel="stylesheet" href="assets/css/module-css/about-section.css">
@@ -102,21 +96,21 @@
             z-index: 10;
         }
 
-        .zip-meta-grid {
+        .city-meta-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 15px;
             margin: 25px 0;
         }
 
-        .zip-meta-card {
+        .city-meta-card {
             background: #f6faf7;
             border-radius: 12px;
-            padding: 15px;
+            padding: 18px;
             border: 1px solid #e0efe5;
         }
 
-        .zip-meta-card span {
+        .city-meta-card span {
             display: block;
             font-size: 13px;
             text-transform: uppercase;
@@ -125,44 +119,42 @@
             letter-spacing: 0.05em;
         }
 
-        .zip-meta-card strong {
+        .city-meta-card strong {
             font-size: 18px;
             color: #1a9f5a;
             display: block;
         }
 
-        .zip-area-insight {
-            background: #fff;
-            border-radius: 14px;
-            padding: 25px;
-            border: 1px solid #e7ede9;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-        }
-
-        .zip-area-insight__grid {
+        .city-highlight-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+            margin-top: 18px;
         }
 
-        .zip-area-insight__grid h5 {
-            font-size: 16px;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
+        .city-highlight-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #e7ede9;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+            height: 100%;
+        }
+
+        .city-highlight-card h5 {
+            font-size: 18px;
             margin-bottom: 10px;
-            color: #0f5132;
+            color: #1a9f5a;
         }
 
-        .zip-pill-list {
+        .city-pill-list {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
 
-        .zip-pill-list span,
-        .zip-pill-list a {
+        .city-pill-list a,
+        .city-pill-list span {
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -176,50 +168,13 @@
             transition: all 0.2s ease-in-out;
         }
 
-        .zip-pill-list a:hover {
+        .city-pill-list a:hover {
             background-color: #1a9f5a;
             color: #fff;
             border-color: #1a9f5a;
         }
 
-        .zip-highlight-card {
-            background: #fff;
-            border-radius: 12px;
-            padding: 20px;
-            border: 1px solid #e7ede9;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-            height: 100%;
-        }
-
-        .zip-highlight-card h5 {
-            font-size: 18px;
-            margin-bottom: 10px;
-            color: #1a9f5a;
-        }
-
-        .zip-highlight-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .zip-service-list li {
-            margin-bottom: 12px;
-            padding-left: 25px;
-            position: relative;
-            line-height: 1.6;
-        }
-
-        .zip-service-list li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: #1a9f5a;
-            font-weight: 700;
-        }
-
-        .zip-info-card {
+        .city-info-card {
             background-color: #1a9f5a;
             border-radius: 10px;
             padding: 30px;
@@ -227,19 +182,23 @@
             margin-top: 30px;
         }
 
-        .zip-cta-box {
-            background-color: #1a9f5a;
-            color: #fff;
-            padding: 25px;
-            border-radius: 8px;
-            margin: 35px 0;
-            text-align: center;
+        .city-service-list li {
+            margin-bottom: 10px;
+            padding-left: 24px;
+            position: relative;
+            line-height: 1.6;
         }
 
-        .zip-cta-box a {
-            color: #fff;
+        .city-service-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #1a9f5a;
             font-weight: 700;
-            text-decoration: underline;
+        }
+
+        .city-service-list.city-service-list--light li::before {
+            color: #fff;
         }
     </style>
 
@@ -265,31 +224,18 @@
             <div class="switch_menu">
                 <div class="switcher_container">
                     <ul id="styleOptions" title="switch styling">
-                        <li>
-                            <a href="javascript: void(0)" data-theme="blue" class="blue-color"></a>
-                        </li>
-                        <li>
-                            <a href="javascript: void(0)" data-theme="pink" class="pink-color"></a>
-                        </li>
-                        <li>
-                            <a href="javascript: void(0)" data-theme="violet" class="violet-color"></a>
-                        </li>
-                        <li>
-                            <a href="javascript: void(0)" data-theme="crimson" class="crimson-color"></a>
-                        </li>
-                        <li>
-                            <a href="javascript: void(0)" data-theme="orange" class="orange-color"></a>
-                        </li>
-                        <li>
-                            <a href="javascript: void(0)" data-theme="green" class="green-color"></a>
-                        </li>
+                        <li><a href="javascript: void(0)" data-theme="blue" class="blue-color"></a></li>
+                        <li><a href="javascript: void(0)" data-theme="pink" class="pink-color"></a></li>
+                        <li><a href="javascript: void(0)" data-theme="violet" class="violet-color"></a></li>
+                        <li><a href="javascript: void(0)" data-theme="crimson" class="crimson-color"></a></li>
+                        <li><a href="javascript: void(0)" data-theme="orange" class="orange-color"></a></li>
+                        <li><a href="javascript: void(0)" data-theme="green" class="green-color"></a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <header class="main-header header-style-one">
-
             <div class="header-top">
                 <div class="auto-container">
                     <div class="outer-box">
@@ -297,34 +243,20 @@
                             <div class="header-contact-info-style1">
                                 <ul>
                                     <li>
-                                        <div class="icon">
-                                            <span class="icon-pin"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>2610 Church St, NW, Quick, GA 30318</p>
-                                        </div>
+                                        <div class="icon"><span class="icon-pin"></span></div>
+                                        <div class="text"><p>2610 Church St, NW, Quick, GA 30318</p></div>
                                     </li>
                                     <li>
-                                        <div class="icon">
-                                            <span class="icon-email"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="mailto:info@quickjunkremoval.com">info@quickjunkremoval.com</a></p>
-                                        </div>
+                                        <div class="icon"><span class="icon-email"></span></div>
+                                        <div class="text"><p><a href="mailto:info@quickjunkremoval.com">info@quickjunkremoval.com</a></p></div>
                                     </li>
                                     <li>
-                                        <div class="icon">
-                                            <span class="icon-time"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Mon - Sat 7:00 am to 7:00 pm</p>
-                                        </div>
+                                        <div class="icon"><span class="icon-time"></span></div>
+                                        <div class="text"><p>Mon - Sat 7:00 am to 7:00 pm</p></div>
                                     </li>
-
                                 </ul>
                             </div>
                         </div>
-
                         <div class="header-top__right">
                             <div class="header-button-style1">
                                 <a class="btn-one" href="contact.html">
@@ -334,7 +266,6 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -342,7 +273,6 @@
             <div class="header">
                 <div class="auto-container">
                     <div class="outer-box">
-
                         <div class="header-left">
                             <div class="main-logo-box">
                                 <a href="index.html">
@@ -352,18 +282,10 @@
                             </div>
                             <div class="header-social-link">
                                 <ul class="clearfix">
-                                    <li>
-                                        <a href="#"><i class="icon-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="icon-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="icon-pinterest"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="icon-instagram"></i></a>
-                                    </li>
+                                    <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                    <li><a href="#"><i class="icon-facebook"></i></a></li>
+                                    <li><a href="#"><i class="icon-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="icon-instagram"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -380,7 +302,7 @@
                                 <nav class="main-menu style1 navbar-expand-md navbar-light">
                                     <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                         <ul class="navigation clearfix">
-                                            <li class=""><a href="index.html"><span>Home</span></a></li>
+                                            <li><a href="index.html"><span>Home</span></a></li>
                                             <li class="dropdown current"><a href="#"><span>Areas Served</span></a>
                                                 <div class="megamenu">
                                                     <div class="row clearfix">
@@ -454,21 +376,17 @@
 
                         <div class="header-right">
                             <div class="phone-number-box1">
-                                <div class="icon">
-                                    <span class="icon-phone-ringing"></span>
-                                </div>
+                                <div class="icon"><span class="icon-phone-ringing"></span></div>
                                 <div class="phone">
                                     <p>Have any questions?</p>
                                     <a href="tel:6788418655">(678) 841-8655</a>
                                 </div>
                             </div>
-
                             <div class="serach-button-style1">
                                 <button type="button" class="search-toggler">
                                     <i class="icon-magnifying-glass"></i>
                                 </button>
                             </div>
-
                         </div>
 
                     </div>
@@ -485,8 +403,7 @@
                             </a>
                         </div>
                         <div class="right-col float-right">
-                            <nav class="main-menu clearfix">
-                            </nav>
+                            <nav class="main-menu clearfix"></nav>
                         </div>
                     </div>
                 </div>
@@ -502,8 +419,7 @@
                             <span class="logo-text">QUICK</span>
                         </a>
                     </div>
-                    <div class="menu-outer">
-                    </div>
+                    <div class="menu-outer"></div>
                     <div class="social-links">
                         <ul class="clearfix">
                             <li><a href="#"><span class="fab fa fa-facebook-square"></span></a></li>
@@ -518,24 +434,20 @@
         </header>
 
         <section class="breadcrumb-area">
-            <div class="breadcrumb-area-bg" id="zip-hero-bg" style="background-image: url(assets/images/breadcrumb/breadcrumb-1.jpg);">
-            </div>
+            <div class="breadcrumb-area-bg" id="city-hero-bg" style="background-image: url(assets/images/breadcrumb/breadcrumb-1.jpg);"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="inner-content">
-                            <div class="breadcrumb-menu" data-aos="fade-down" data-aos-easing="linear"
-                                data-aos-duration="1500">
+                            <div class="breadcrumb-menu" data-aos="fade-down" data-aos-duration="1500">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li class="active" id="breadcrumb-area">ZIP Details</li>
+                                    <li class="active" id="breadcrumb-area">City Details</li>
                                 </ul>
                             </div>
-
-                            <div class="title" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                                <h2 id="breadcrumb-title">Zip Code Junk Removal</h2>
+                            <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                                <h2 id="breadcrumb-title">City Junk Removal</h2>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -547,74 +459,60 @@
                 <div class="row">
                     <div class="col-xl-7 col-lg-7">
                         <div class="area-content-box">
-                            <p class="sec-title__tagline" style="color: #1a9f5a;">Zip code coverage</p>
-                            <h2 id="zip-main-title" style="color: #0f5132;">Zip Code Junk Removal</h2>
-                            <p id="zip-summary" style="margin-top: 15px;">We keep every property, business, construction site, and multi-family community clear of clutter with fast, eco-friendly junk removal.</p>
+                            <p class="sec-title__tagline" style="color: #1a9f5a;" id="city-tagline">City coverage</p>
+                            <h2 id="city-main-title" style="color: #0f5132;">City Junk Removal</h2>
+                            <p id="city-summary" style="margin-top: 15px;">We keep every property, business, and construction site clear of clutter with fast, eco-friendly junk removal.</p>
 
-                            <div class="zip-meta-grid">
-                                <div class="zip-meta-card">
-                                    <span>Zip Code</span>
-                                    <strong id="zip-code-label">30301</strong>
+                            <div class="city-meta-grid">
+                                <div class="city-meta-card">
+                                    <span>City</span>
+                                    <strong id="city-name">Quick, GA</strong>
                                 </div>
-                                <div class="zip-meta-card">
-                                    <span>Primary City</span>
-                                    <strong id="zip-city">Quick</strong>
-                                </div>
-                                <div class="zip-meta-card">
+                                <div class="city-meta-card">
                                     <span>County</span>
-                                    <strong id="zip-county">Fulton County</strong>
+                                    <strong id="city-county">Fulton County</strong>
                                 </div>
-                                <div class="zip-meta-card">
+                                <div class="city-meta-card">
+                                    <span>State</span>
+                                    <strong id="city-state">GA</strong>
+                                </div>
+                                <div class="city-meta-card">
                                     <span>Average Response</span>
-                                    <strong id="zip-response-time">Same-day</strong>
+                                    <strong id="city-response-time">Same-day</strong>
                                 </div>
                             </div>
 
-                            <div class="zip-area-insight">
-                                <h4 style="color: #1a9f5a;">About <span id="zip-area-name-inline">this service area</span></h4>
-                                <p id="zip-community-profile" style="margin-top: 8px;">From civic centers to creative lofts, we keep your blocks clutter-free with careful crews and same-day dispatch.</p>
-
-                                <div class="zip-area-insight__grid">
-                                    <div>
-                                        <h5>Signature Landmarks</h5>
-                                        <div class="zip-pill-list" id="zip-landmarks">
-                                            <span>State Capitol</span>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <h5>Service Focus</h5>
-                                        <ul class="zip-service-list" id="zip-service-focus">
-                                            <li>Document cleanouts</li>
-                                        </ul>
-                                    </div>
+                            <div style="margin-top: 30px;">
+                                <h4 style="color: #1a9f5a;">Neighborhoods & districts we serve</h4>
+                                <div class="city-pill-list" id="city-neighborhoods" style="margin-top: 15px;">
+                                    <span>Downtown</span>
                                 </div>
                             </div>
 
-                            <h4 style="color: #1a9f5a;">Popular services in <span id="zip-area-name">your neighborhood</span></h4>
-                            <ul class="zip-service-list" id="zip-service-list" style="margin-top: 15px;">
-                                <li>Residential junk removal</li>
-                                <li>Commercial cleanouts</li>
-                                <li>Construction debris hauling</li>
-                            </ul>
-
-                            <div class="zip-highlight-grid" id="zip-highlights">
+                            <div style="margin-top: 30px;">
+                                <h4 id="city-service-focus-title" style="color: #1a9f5a;">Top services in your city</h4>
+                                <ul class="city-service-list" id="city-service-focus" style="margin-top: 12px;">
+                                    <li>Residential junk removal</li>
+                                    <li>Commercial cleanouts</li>
+                                    <li>Construction debris hauling</li>
+                                </ul>
                             </div>
 
-                            <div style="margin-top: 35px;">
-                                <h4 style="color: #1a9f5a;">Neighborhoods & Destinations We Serve</h4>
-                                <div class="zip-pill-list" id="zip-neighborhoods" style="margin-top: 15px;">
-                                    <span>Midtown</span>
-                                </div>
+                            <div class="city-highlight-grid" id="city-highlights"></div>
+
+                            <div class="city-info-card">
+                                <h3 style="margin-bottom: 8px;">Need a pickup in <span id="city-cta-name">your area</span>?</h3>
+                                <p id="city-cta-text">Call <a href="tel:6788418655" style="color: #fff; font-weight: 700; text-decoration: underline;">(678) 841-8655</a> for a zero-commitment quote or tap below to send us the details.</p>
+                                <ul class="city-service-list city-service-list--light" id="city-typical-clients" style="margin-top: 15px;">
+                                    <li>Homeowners & renters</li>
+                                    <li>Property managers</li>
+                                    <li>Contractors</li>
+                                </ul>
                             </div>
 
-                            <div class="zip-cta-box">
-                                <h3 style="margin-bottom: 5px;">Questions about your pickup?</h3>
-                                <p>Call us at <a id="zip-cta-phone" href="tel:6788418655">(678) 841-8655</a> or request a zero-commitment quote.</p>
-                            </div>
-
-                            <div>
-                                <h4 style="color: #1a9f5a;">Nearby Zip Codes</h4>
-                                <div class="zip-pill-list" id="zip-nearby-list" style="margin-top: 12px;">
+                            <div style="margin-top: 30px;">
+                                <h4 style="color: #1a9f5a;">Popular zip codes we cover</h4>
+                                <div class="city-pill-list" id="city-popular-zips" style="margin-top: 12px;">
                                 </div>
                             </div>
                         </div>
@@ -625,49 +523,41 @@
                             <iframe width="545" height="307" src="https://www.youtube.com/embed/C1xILfzd8GA" title="Best Junk Removal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
 
-                        <div class="contact-form contact-form--style2 zip-info-card">
+                        <div class="contact-form contact-form--style2 city-info-card">
                             <div class="sec-title">
                                 <div class="sub-title">
                                     <h3 style="color: #fff;">Request Service</h3>
                                 </div>
-                                <h2 style="color: #fff;" id="zip-form-title">Need junk removal in your zip code?</h2>
+                                <h2 style="color: #fff;" id="city-form-title">Need junk removal in your city?</h2>
                             </div>
-                            <p style="color: #fff; margin-bottom: 20px;" id="zip-contact-desc">Tell us about the debris that needs to disappear. We send a two-person crew with the right truck.</p>
+                            <p style="color: #fff; margin-bottom: 20px;" id="city-contact-desc">Tell us about the debris that needs to disappear. We send a two-person crew with the right truck.</p>
 
-                            <form id="zip-contact-form" name="zip_contact_form" class="default-form2"
-                                action="assets/inc/sendmail.php" method="post">
+                            <form id="city-contact-form" name="city_contact_form" class="default-form2" action="assets/inc/sendmail.php" method="post">
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <div class="form-group">
                                             <div class="input-box">
-                                                <input type="text" name="form_name"
-                                                    placeholder="Enter Your Name" required="">
+                                                <input type="text" name="form_name" placeholder="Enter Your Name" required="">
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="col-xl-12">
                                         <div class="form-group">
                                             <div class="input-box">
-                                                <input type="text" name="form_phone"
-                                                    placeholder="Enter Phone #" required="">
+                                                <input type="text" name="form_phone" placeholder="Enter Phone #" required="">
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="col-xl-12">
                                         <div class="form-group">
                                             <div class="input-box">
-                                                <input type="email" name="form_email"
-                                                    placeholder="Enter Email" required="">
+                                                <input type="email" name="form_email" placeholder="Enter Email" required="">
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="col-xl-12">
                                         <div class="button-box">
-                                            <input name="form_botcheck" class="form-control"
-                                                type="hidden" value="">
+                                            <input name="form_botcheck" class="form-control" type="hidden" value="">
                                             <button class="btn-one" type="submit" data-loading-text="Please wait..." style="background-color: white; width: 100%;">
                                                 <span class="txt">Submit Your Info <i class="icon-refresh arrow"></i></span>
                                             </button>
@@ -687,7 +577,7 @@
             <div class="container">
                 <div class="sec-title text-center">
                     <div class="sub-title">
-                        <h3>How We Work In Your Zip Code</h3>
+                        <h3>How We Work In Your City</h3>
                     </div>
                     <h2>Simple three-step playbook</h2>
                 </div>
@@ -744,13 +634,10 @@
                     <div class="sub-title">
                         <h3>Coverage Map</h3>
                     </div>
-                    <h2 id="zip-map-title">Where we haul in this zip code</h2>
+                    <h2 id="city-map-title">Where we haul in this city</h2>
                 </div>
                 <div class="home1-page-map-outer">
-                    <div class="map-canvas" id="zip-map" data-zoom="12" data-lat="33.7490" data-lng="-84.3880"
-                        data-type="roadmap" data-hue="#1a9f5a" data-title="Quick Junk Removal"
-                        data-icon-path="assets/images/icon/map-marker.png"
-                        data-content="Quick Junk Removal<br><a href='mailto:info@quickjunkremoval.com'>info@quickjunkremoval.com</a><br><a href='tel:6788418655'>(678) 841-8655</a>">
+                    <div class="map-canvas" id="city-map" data-zoom="12" data-lat="33.7490" data-lng="-84.3880" data-type="roadmap" data-hue="#1a9f5a" data-title="Quick Junk Removal" data-icon-path="assets/images/icon/map-marker.png" data-content="Quick Junk Removal<br><a href='mailto:info@quickjunkremoval.com'>info@quickjunkremoval.com</a><br><a href='tel:6788418655'>(678) 841-8655</a>">
                     </div>
                 </div>
             </div>
@@ -758,8 +645,7 @@
 
         <div class="bottom-parallax">
             <footer class="footer-area">
-                <div class="footer-area-bg" style="background-image: url(assets/images/resources/footer-bg-1.png);">
-                </div>
+                <div class="footer-area-bg" style="background-image: url(assets/images/resources/footer-bg-1.png);"></div>
 
                 <div class="footer-top">
                     <div class="container">
@@ -804,18 +690,10 @@
                                         </div>
                                         <div class="footer-social-link">
                                             <ul class="clearfix">
-                                                <li>
-                                                    <a href="#"><i class="icon-twitter"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="icon-facebook"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="icon-pinterest"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="icon-instagram"></i></a>
-                                                </li>
+                                                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                                <li><a href="#"><i class="icon-facebook"></i></a></li>
+                                                <li><a href="#"><i class="icon-pinterest"></i></a></li>
+                                                <li><a href="#"><i class="icon-instagram"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -834,9 +712,7 @@
                                                         <span class="icon-telephone"></span>
                                                     </div>
                                                     <div class="text">
-                                                        <p>
-                                                            <a href="tel:6788418655">(678) 841-8655</a>
-                                                        </p>
+                                                        <p><a href="tel:6788418655">(678) 841-8655</a></p>
                                                     </div>
                                                 </div>
                                             </li>
@@ -846,9 +722,7 @@
                                                         <span class="icon-email-1"></span>
                                                     </div>
                                                     <div class="text">
-                                                        <p>
-                                                            <a href="mailto:info@quickjunkremoval.com">info@quickjunkremoval.com</a>
-                                                        </p>
+                                                        <p><a href="mailto:info@quickjunkremoval.com">info@quickjunkremoval.com</a></p>
                                                     </div>
                                                 </div>
                                             </li>
@@ -894,8 +768,7 @@
                     <form method="post" action="index.html">
                         <div class="form-group">
                             <fieldset>
-                                <input type="search" class="form-control" name="search-input" value=""
-                                    placeholder="Search Here" required>
+                                <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required>
                                 <input type="submit" value="Search Now!" class="theme-btn style-four">
                             </fieldset>
                         </div>
@@ -939,11 +812,9 @@
     <script src="assets/js/validation.js"></script>
     <script src="assets/js/wow.js"></script>
     <script src="assets/js/jquery-1color-switcher.min.js"></script>
-    <script src="assets/js/zip-data.js"></script>
+    <script src="assets/js/city-data.js"></script>
 
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM&callback=initMap">
-    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM&callback=initMap"></script>
 
     <script src="assets/js/custom.js"></script>
 
@@ -955,19 +826,20 @@
             return results === null ? null : decodeURIComponent(results[1].replace(/\+/g, ' '));
         }
 
-        function createListItems(containerId, items) {
+        function createListItems(containerId, items, options) {
             var container = document.getElementById(containerId);
             if (!container) {
                 return;
             }
+
+            container.innerHTML = '';
             if (!items || !items.length) {
-                container.innerHTML = '<p>Coverage details coming soon.</p>';
+                container.innerHTML = options && options.empty ? options.empty : '<span>Details coming soon.</span>';
                 return;
             }
-            var fragment = document.createDocumentFragment();
 
-            if (container.tagName === 'UL' || container.tagName === 'OL') {
-                container.innerHTML = '';
+            var fragment = document.createDocumentFragment();
+            if (container.tagName === 'UL') {
                 items.forEach(function (item) {
                     var li = document.createElement('li');
                     li.textContent = item;
@@ -975,13 +847,11 @@
                 });
                 container.appendChild(fragment);
             } else {
-                container.innerHTML = '';
                 items.forEach(function (item) {
                     var span = document.createElement('span');
                     span.textContent = item;
                     fragment.appendChild(span);
                 });
-                container.classList.add('zip-pill-list');
                 container.appendChild(fragment);
             }
         }
@@ -997,107 +867,113 @@
             }
             highlights.forEach(function (item) {
                 var card = document.createElement('div');
-                card.className = 'zip-highlight-card';
+                card.className = 'city-highlight-card';
                 card.innerHTML = '<h5>' + item.title + '</h5><p>' + item.description + '</p>';
                 container.appendChild(card);
             });
         }
 
-        function renderNearby(containerId, nearby) {
+        function renderPopularZips(containerId, zips) {
             var container = document.getElementById(containerId);
             if (!container) {
                 return;
             }
             container.innerHTML = '';
-            if (!nearby || !nearby.length) {
-                container.innerHTML = '<span>No neighboring zips on file</span>';
+            if (!zips || !zips.length) {
+                container.innerHTML = '<span>No zip codes listed yet</span>';
                 return;
             }
             var fragment = document.createDocumentFragment();
-            nearby.forEach(function (zip) {
+            zips.forEach(function (zip) {
                 var link = document.createElement('a');
-                link.href = 'zip-details.html?zip=' + zip;
+                link.href = 'zip-details.html?zip=' + encodeURIComponent(zip);
                 link.textContent = zip;
                 fragment.appendChild(link);
             });
-            container.classList.add('zip-pill-list');
             container.appendChild(fragment);
         }
 
-        function updateMap(record) {
-            var mapCanvas = document.getElementById('zip-map');
-            if (!mapCanvas) {
+        function updateCityMap(record) {
+            var mapCanvas = document.getElementById('city-map');
+            if (!mapCanvas || !record) {
                 return;
             }
             mapCanvas.setAttribute('data-lat', record.lat);
             mapCanvas.setAttribute('data-lng', record.lng);
-            mapCanvas.setAttribute('data-content', record.city + ' ' + record.zip + '<br><a href="mailto:info@quickjunkremoval.com">info@quickjunkremoval.com</a><br><a href="tel:6788418655">(678) 841-8655</a>');
+            mapCanvas.setAttribute('data-content', record.name + ', ' + record.state + '<br><a href="mailto:info@quickjunkremoval.com">info@quickjunkremoval.com</a><br><a href="tel:6788418655">(678) 841-8655</a>');
         }
 
         document.addEventListener('DOMContentLoaded', function () {
-            var dataSource = window.ZipServiceData;
-            var defaultZip = (dataSource && dataSource.orderedZips && dataSource.orderedZips[0]) || '30301';
-            var requestedZip = getUrlParameter('zip') || defaultZip;
-            var record = dataSource ? dataSource.getZipRecord(requestedZip) : null;
+            var dataSource = window.CityServiceData;
+            var defaultCity = (dataSource && dataSource.orderedCities && dataSource.orderedCities[0]) || 'Quick';
+            var slugify = (dataSource && typeof dataSource.slugify === 'function')
+                ? dataSource.slugify
+                : function (value) {
+                    return (value || '').toString().trim().toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+                };
+            var requestedParam = getUrlParameter('city');
+            var fallbackSlug = slugify(defaultCity);
+            var requestedCity = requestedParam || fallbackSlug;
+            var record = (dataSource && typeof dataSource.getCityRecord === 'function')
+                ? dataSource.getCityRecord(requestedCity)
+                : null;
+
+            if (!record && dataSource && typeof dataSource.buildFallback === 'function') {
+                record = dataSource.buildFallback(requestedParam || defaultCity);
+            }
+
             if (!record) {
                 record = {
-                    zip: requestedZip,
-                    title: 'ZIP ' + requestedZip + ' Junk Removal & Cleanup',
-                    areaName: 'Greater Quick Metro',
-                    city: 'Quick',
+                    name: requestedParam || defaultCity || 'Your City',
+                    state: 'GA',
                     county: 'Metro Atlanta',
-                    communityProfile: 'Greater Quick metro covering residential neighborhoods, business districts, and construction projects.',
-                    summary: 'On-demand residential, commercial, and construction debris removal anywhere in the greater Quick service map.',
-                    responseTime: 'Same-day or next-day appointments, 7 days a week.',
-                    heroImage: 'assets/images/breadcrumb/breadcrumb-1.jpg',
-                    topServices: [
-                        'Residential junk removal',
-                        'Commercial cleanouts',
-                        'Construction debris hauling',
-                        'Appliance & electronics recycling'
-                    ],
-                    neighborhoods: ['Quick Metro'],
+                    headline: ((requestedParam || defaultCity || 'Metro Atlanta') + ' Junk Removal & Hauling'),
+                    tagline: 'Local crews standing by.',
+                    summary: 'Full-service residential, commercial, and construction junk removal across the metro.',
+                    responseTime: 'Same-day service available 7 days a week.',
+                    neighborhoods: ['Historic Downtown', 'Local Neighborhoods'],
+                    serviceFocus: ['Residential junk removal', 'Commercial cleanouts', 'Eco-friendly recycling'],
                     serviceHighlights: [
-                        { title: 'Full-Service Hauling', description: 'Point to what goes, we lift the rest.' },
-                        { title: 'Eco-Friendly', description: 'Donation and recycling always come first.' }
+                        { title: 'Local Teams', description: 'Crew members who know the HOA rules and back roads.' },
+                        { title: 'Heavy Lifting Included', description: 'You point to what goes, we haul it out.' },
+                        { title: 'Donation First', description: 'Reusable items go to local charities whenever possible.' }
                     ],
-                    landmarks: ['Downtown Quick', 'Metro Suburbs', 'Business Parks'],
-                    serviceFocus: ['Residential cleanouts', 'Business junk removal', 'Eco-friendly disposal'],
+                    typicalClients: ['Homeowners', 'Property managers', 'Contractors'],
+                    popularZips: [],
+                    heroImage: 'assets/images/breadcrumb/breadcrumb-1.jpg',
                     lat: 33.7488,
-                    lng: -84.3877,
-                    nearbyZips: []
+                    lng: -84.3877
                 };
             }
 
-            document.getElementById('page-title').textContent = record.title + ' - Quick Junk Removal';
-            document.getElementById('breadcrumb-area').textContent = record.city;
-            document.getElementById('breadcrumb-title').textContent = record.title;
-            document.getElementById('zip-main-title').textContent = record.title;
-            document.getElementById('zip-summary').textContent = record.summary;
-            document.getElementById('zip-code-label').textContent = record.zip;
-            document.getElementById('zip-city').textContent = record.city;
-            document.getElementById('zip-county').textContent = record.county;
-            document.getElementById('zip-response-time').textContent = record.responseTime;
-            document.getElementById('zip-area-name').textContent = record.areaName;
-            document.getElementById('zip-area-name-inline').textContent = record.areaName;
-            document.getElementById('zip-community-profile').textContent = record.communityProfile || 'We keep this area moving with fast, respectful junk removal for every property type.';
-            document.getElementById('zip-form-title').innerHTML = 'Need junk removal in <span>' + record.city + '</span>?';
-            document.getElementById('zip-contact-desc').textContent = 'From attics to loading docks in ' + record.areaName + ', we keep clutter moving out fast.';
-            document.getElementById('zip-cta-phone').textContent = '(678) 841-8655';
-            document.getElementById('zip-map-title').textContent = record.city + ' coverage';
+            document.getElementById('page-title').textContent = record.headline + ' - Quick Junk Removal';
+            document.getElementById('breadcrumb-area').textContent = record.name;
+            document.getElementById('breadcrumb-title').textContent = record.headline;
+            document.getElementById('city-main-title').textContent = record.headline;
+            document.getElementById('city-tagline').textContent = record.tagline;
+            document.getElementById('city-summary').textContent = record.summary;
+            document.getElementById('city-name').textContent = record.name + ', ' + record.state;
+            document.getElementById('city-county').textContent = record.county;
+            document.getElementById('city-state').textContent = record.state;
+            document.getElementById('city-response-time').textContent = record.responseTime;
+            document.getElementById('city-service-focus-title').textContent = 'Top services in ' + record.name;
+            document.getElementById('city-cta-name').textContent = record.name;
+            document.getElementById('city-cta-text').innerHTML = 'Call <a href="tel:6788418655" style="color: #fff; font-weight: 700; text-decoration: underline;">(678) 841-8655</a> for a zero-commitment quote or tap below to send us the details.';
+            document.getElementById('city-form-title').innerHTML = 'Need junk removal in <span>' + record.name + '</span>?';
+            document.getElementById('city-contact-desc').textContent = 'From attics to loading docks in ' + record.name + ', we keep clutter moving out fast.';
+            document.getElementById('city-map-title').textContent = record.name + ' coverage map';
 
-            var heroBg = document.getElementById('zip-hero-bg');
+            var heroBg = document.getElementById('city-hero-bg');
             if (heroBg && record.heroImage) {
                 heroBg.style.backgroundImage = 'url(' + record.heroImage + ')';
             }
 
-            createListItems('zip-service-list', record.topServices);
-            createListItems('zip-neighborhoods', record.neighborhoods);
-            renderHighlights('zip-highlights', record.serviceHighlights);
-            renderNearby('zip-nearby-list', record.nearbyZips);
-            createListItems('zip-landmarks', record.landmarks);
-            createListItems('zip-service-focus', record.serviceFocus);
-            updateMap(record);
+            createListItems('city-neighborhoods', record.neighborhoods, { empty: '<span>Neighborhood list coming soon.</span>' });
+            createListItems('city-service-focus', record.serviceFocus, { empty: '<li>Service information coming soon.</li>' });
+            createListItems('city-typical-clients', record.typicalClients, { empty: '<li>Homeowners & businesses</li>' });
+            renderHighlights('city-highlights', record.serviceHighlights);
+            renderPopularZips('city-popular-zips', record.popularZips);
+            updateCityMap(record);
         });
     </script>
 

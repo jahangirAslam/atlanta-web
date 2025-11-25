@@ -56,6 +56,7 @@
             summary: 'Courthouses, federal buildings, and historic landmarks that need discreet, security-cleared junk removal with minimal disruption.',
             responseTime: 'Priority dispatch with 2-hour arrival windows for government facilities.',
             heroImage: 'assets/images/breadcrumb/breadcrumb-1.jpg',
+            communityProfile: 'Courthouses, state offices, and historic civic buildings that demand badge-ready crews and quiet hauling windows.',
             topServices: [
                 'Document cleanouts & shredding support',
                 'Commercial junk removal',
@@ -68,6 +69,8 @@
                 { title: 'Flexible Scheduling', description: 'After-hours and weekend appointments to avoid interfering with the public.' },
                 { title: 'Sustainable Disposal', description: 'Certified recycling partners for paper, electronics, and fixtures.' }
             ],
+            landmarks: ['Georgia State Capitol', 'Supreme Court of Georgia', 'City Hall', 'Underground Atlanta'],
+            serviceFocus: ['Document & records cleanouts', 'Secure electronics recycling', 'After-hours debris removal'],
             lat: 33.7488,
             lng: -84.3877,
             zips: ['39901']
@@ -79,6 +82,7 @@
             summary: 'High-rise offices, fulfillment centers, and executive suites that rely on recurring pickups for files, fixtures, and equipment.',
             responseTime: 'Same-day service with 90-minute ETA updates across central Quick.',
             heroImage: 'assets/images/resources/video-gallery-style2-bg.jpg',
+            communityProfile: 'Midtown and Downtown commercial towers, mail facilities, and executive suites that need white-glove junk removal.',
             topServices: [
                 'Office furniture removal',
                 'Cubicle and workstation breakdowns',
@@ -91,6 +95,8 @@
                 { title: 'Recurring Routes', description: 'Weekly or monthly pickups for property managers and mail facilities.' },
                 { title: 'Donation First', description: 'Reusable furniture diverted to local nonprofits whenever possible.' }
             ],
+            landmarks: ['Peachtree Center', 'Midtown Mile', 'Downtown Connector', 'Corporate Mail Facilities'],
+            serviceFocus: ['Office furniture changeouts', 'Cubicle & workstation removal', 'Paper & e-waste recycling'],
             lat: 33.7573,
             lng: -84.3877,
             zips: ['31199', '31198', '31197', '31196', '31195', '31193', '31192', '31191', '31156', '31150', '31146', '31145', '31141', '31139', '31132', '31131', '31126', '31119', '31107', '31106']
@@ -102,6 +108,7 @@
             summary: 'Lakefront homes, marinas, and suburban neighborhoods that call for boat, dock, and bulky debris removal.',
             responseTime: 'Morning and afternoon arrival blocks with boat-ramp coordination.',
             heroImage: 'assets/images/resources/features-style2-2.jpg',
+            communityProfile: 'Lake Lanier shoreline homes, marinas, and nearby neighborhoods that need boat, dock, and bulky debris removal.',
             topServices: [
                 'Boat, dock, and trailer removal',
                 'Construction debris hauling',
@@ -114,6 +121,8 @@
                 { title: 'Storm Cleanup', description: 'Rapid response after high water, wind, or fallen trees.' },
                 { title: 'HOA Approved', description: 'Partnered with neighborhood managers for curbside pickups.' }
             ],
+            landmarks: ['Lake Lanier Islands', 'Hideaway Bay Marina', 'Flowery Branch Historic District'],
+            serviceFocus: ['Boat & dock removal', 'Storm debris & shoreline cleanup', 'Estate & garage cleanouts'],
             lat: 34.1804,
             lng: -83.9252,
             zips: ['30542']
@@ -125,6 +134,7 @@
             summary: 'Busy retail corridors, logistics centers, and growing neighborhoods surrounding the Mall of Georgia.',
             responseTime: 'Same-day hauling with dedicated retail dock support.',
             heroImage: 'assets/images/slides/slide-v1-2.jpg',
+            communityProfile: 'Super-regional retail, logistics hubs, and fast-growing neighborhoods surrounding the Mall of Georgia.',
             topServices: [
                 'Retail fixture removal',
                 'Warehouse cleanouts',
@@ -137,6 +147,8 @@
                 { title: 'Logistics Support', description: 'Trailer sweep-outs and pallet removal for fulfillment partners.' },
                 { title: 'Neighborhood Friendly', description: 'Respectful crews for HOAs and gated communities.' }
             ],
+            landmarks: ['Mall of Georgia', 'Buford Community Center', 'Bogan Park'],
+            serviceFocus: ['Retail fixture swap-outs', 'Warehouse & logistics cleanouts', 'Neighborhood junk removal'],
             lat: 34.078,
             lng: -83.987,
             zips: ['30519', '30518']
@@ -148,6 +160,7 @@
             summary: 'Master-planned communities, parks, and small businesses that prefer eco-friendly disposal.',
             responseTime: 'Guaranteed next-day pickups with SMS arrival alerts.',
             heroImage: 'assets/images/resources/features-style2-1.jpg',
+            communityProfile: 'Master-planned neighborhoods, park systems, and boutique business corridors that prioritize eco-friendly hauling.',
             topServices: [
                 'Residential junk removal',
                 'Garage & attic cleanouts',
@@ -160,6 +173,8 @@
                 { title: 'Family-Safe Crews', description: 'Background-checked teams respectful of HOA guidelines.' },
                 { title: 'Donation Partnerships', description: 'Working with Gwinnett charities for furniture and bikes.' }
             ],
+            landmarks: ['Town Center Park', 'Suwanee Greenway', 'Sims Lake Park'],
+            serviceFocus: ['Garage & attic cleanouts', 'Playset & yard structure removal', 'Eco-focused recycling routes'],
             lat: 34.0514,
             lng: -84.0713,
             zips: ['30515']
@@ -171,6 +186,7 @@
             summary: 'High-density mix of condos, tech offices, and hospitality spaces that rely on scheduled hauling windows.',
             responseTime: 'Two-hour service windows with live GPS tracking.',
             heroImage: 'assets/images/about/about-style1__image-2.avif',
+            communityProfile: 'Midtown and Downtown spine packed with condos, tech offices, hospitality spaces, and renovation projects.',
             topServices: [
                 'Condo & loft cleanouts',
                 'Hospitality bulk item removal',
@@ -183,6 +199,8 @@
                 { title: 'Renovation Support', description: 'Rolling debris removal for builders and GC partners.' },
                 { title: 'Responsible Recycling', description: '95% diversion goal via donation and recycling streams.' }
             ],
+            landmarks: ['Ponce City Market', 'BeltLine Eastside Trail', 'Fox Theatre', 'Midtown Mile'],
+            serviceFocus: ['Condo & loft cleanouts', 'Hospitality furniture hauling', 'Construction debris support'],
             lat: 33.7701,
             lng: -84.3896,
             zips: ['30399', '30398', '30396', '30394', '30392', '30390', '30389', '30388', '30387', '30386', '30385', '30384']
@@ -194,6 +212,7 @@
             summary: 'Industrial campuses, creative lofts, and neighborhoods stretching toward Hartsfield-Jackson International Airport.',
             responseTime: 'Rapid-response crews staged near Westside and Airport exits.',
             heroImage: 'assets/images/parallax-background/service-style1.jpg',
+            communityProfile: 'Industrial campuses, creative lofts, BeltLine projects, and airport-adjacent neighborhoods that need muscle and speed.',
             topServices: [
                 'Warehouse & plant cleanouts',
                 'Light demolition hauling',
@@ -206,6 +225,8 @@
                 { title: 'Airport Compliance', description: 'Badged teams familiar with SIDA and airport vendor rules.' },
                 { title: 'Community Focus', description: 'Support for BeltLine projects and neighborhood revitalization.' }
             ],
+            landmarks: ['Westside Provisions District', 'Mercedes-Benz Stadium', 'Hartsfield-Jackson International Airport', 'Historic West End'],
+            serviceFocus: ['Warehouse & plant cleanouts', 'Light demolition hauling', 'Airport & logistics support'],
             lat: 33.7529,
             lng: -84.4291,
             zips: ['30380', '30379', '30378', '30377', '30376', '30375', '30374']
@@ -215,7 +236,7 @@
     function buildZipData(groups) {
         const map = {};
         groups.forEach(group => {
-            const { label, city, county, summary, responseTime, heroImage, topServices, neighborhoods, serviceHighlights, lat, lng, zips, state } = group;
+            const { label, city, county, summary, responseTime, heroImage, communityProfile, landmarks, serviceFocus, topServices, neighborhoods, serviceHighlights, lat, lng, zips, state } = group;
 
             zips.forEach(zip => {
                 const override = zipOverrides[zip] || {};
@@ -233,6 +254,9 @@
                     summary,
                     responseTime,
                     heroImage,
+                    communityProfile,
+                    landmarks,
+                    serviceFocus,
                     topServices,
                     neighborhoods,
                     serviceHighlights,
@@ -256,6 +280,7 @@
             summary: 'On-demand residential, commercial, and construction debris removal anywhere in the greater Quick service map.',
             responseTime: 'Same-day or next-day appointments, 7 days a week.',
             heroImage: 'assets/images/breadcrumb/breadcrumb-1.jpg',
+            communityProfile: 'Greater Quick metro covering residential neighborhoods, business districts, and construction projects.',
             topServices: [
                 'Residential junk removal',
                 'Commercial cleanouts',
@@ -268,6 +293,8 @@
                 { title: 'Eco-Friendly', description: 'Donation and recycling partners across Metro Atlanta.' },
                 { title: 'Transparent Pricing', description: 'Volume-based quotes with no surprise fees.' }
             ],
+            landmarks: ['Downtown Quick', 'Metro Suburbs', 'Business Parks'],
+            serviceFocus: ['Residential cleanouts', 'Business junk removal', 'Eco-friendly disposal'],
             lat: 33.7488,
             lng: -84.3877,
             nearbyZips: []
